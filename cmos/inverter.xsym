@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<component name="Inverter" version="0.1.0" label="X">
+    <displaytext>
+        <lang lang="C">Inverter</lang>
+    </displaytext>
+    <description>
+        <lang lang="C">CMOS Inverter</lang>
+    </description>
+    <symbol>
+        <painting name="ellipse" ellipse="0,0,10,10" pos="15,-5" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+            <brush color="#000000" style="0"/>
+        </painting>
+        <painting name="line" line="0,0,-40,-20" pos="15,0" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,40,-20" pos="-25,20" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,0,40" pos="-25,-20" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,5,0" pos="25,0" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+        <painting name="line" line="0,0,5,0" pos="-30,0" transform="1,0,0,1,0,0">
+            <pen width="1" color="#808080" style="1"/>
+        </painting>
+    </symbol>
+    <ports>
+        <port name="vss" pos="0,20"/>
+        <port name="vdd" pos="0,-20"/>
+        <port name="out" pos="30,0"/>
+        <port name="in" pos="-30,0"/>
+    </ports>
+    <properties pos="0,0">
+        <property name="l" default="1.5u" unit="-" visible="false">
+            <description>
+                <lang lang="C">Technology size resolution.</lang>
+            </description>
+        </property>
+    </properties>
+    <models>
+        <model type="spice" syntax="X%label %port{vss} %port{vdd} %port{out} %port{in} inverter l=%property{l} %subcircuit{inverter vss vdd out in l=0 %n.include %librarypath/inverter.net} %generateNetlist"/>
+    </models>
+</component>

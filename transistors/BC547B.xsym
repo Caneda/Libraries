@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC547B" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC547B</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC547B" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC547B %n
+                                    %model{BC547B NPN(IS=23.9f ISE=3.54f NE=1.54 BF=294 IKF=0.136 VAF=63 ISC=62.72f NC=1.24 BR=7.9 IKR=0.11 VAR=26 RB=1 IRB=1u RBM=1 RE=0.47 RC=0.85 CJE=13.6p VJE=0.65 MJE=0.3279 TF=0.44n XTF=120 VTF=2.64 ITF=0.75 CJC=3.73p VJC=0.4 MJC=0.2955 XCJC=0.62 MJS=0.3 FC=0.96)} %n"/>
+    </models>
+</component>

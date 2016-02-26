@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="1N4007" version="0.1.0" label="D">
+    <displaytext>
+        <lang lang="C">1N4007</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,10,0" pos="-20,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="10,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,-20,10" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-20" pos="-10,10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,20,10" pos="-10,-10" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="+" pos="-20,0"/>
+        <port name="-" pos="20,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="1N4007" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="D%label %port{+} %port{-} 1N4007 %n
+                                    %model{1N4007 D(IS=7n RS=34.15m N=1.8 EG=1.06 XTI=5 BV=1000 IBV=50n CJO=10p VJ=0.7 M=0.5 TT=0.1u)} %n"/>
+    </models>
+</component>

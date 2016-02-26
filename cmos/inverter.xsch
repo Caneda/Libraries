@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE caneda>
+<caneda version="0.1.0">
+    <components>
+        <component name="PMOS Transistor" library="Semiconductor" pos="230,10" transform="1,0,0,1,0,0">
+            <properties pos="20,-30">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{2*l}" visible="true"/>
+                <property name="label" value="M2" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="PMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{10*l}" visible="true"/>
+            </properties>
+        </component>
+        <component name="NMOS Transistor" library="Semiconductor" pos="230,90" transform="1,0,0,1,0,0">
+            <properties pos="20,-10">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{2*l}" visible="true"/>
+                <property name="label" value="M1" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="NMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{6*l}" visible="true"/>
+            </properties>
+        </component>
+    </components>
+    <ports>
+        <port name="vss" pos="240,150"/>
+        <port name="vdd" pos="240,-60"/>
+        <port name="in" pos="160,50"/>
+        <port name="out" pos="280,50"/>
+    </ports>
+    <wires>
+        <wire start="200,50" end="160,50"/>
+        <wire start="240,50" end="240,80"/>
+        <wire start="200,50" end="200,10"/>
+        <wire start="240,50" end="280,50"/>
+        <wire start="240,20" end="240,50"/>
+        <wire start="200,90" end="200,50"/>
+        <wire start="240,0" end="240,-60"/>
+        <wire start="200,10" end="220,10"/>
+        <wire start="220,90" end="200,90"/>
+        <wire start="240,100" end="240,150"/>
+    </wires>
+</caneda>

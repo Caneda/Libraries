@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2N2222" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2N2222</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2N2222" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2N2222 %n
+                                    %model{2N2222 NPN(IS=10f VAF=100 BF=200 IKF=0.3 XTB=1.5 BR=3 CJC=8p CJE=25p TR=100n TF=400p ITF=1 VTF=2 XTF=3 RB=10 RC=0.3 RE=0.2)} %n"/>
+    </models>
+</component>
