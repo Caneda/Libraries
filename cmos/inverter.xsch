@@ -1,5 +1,26 @@
 <?xml version="1.0"?>
 <!DOCTYPE caneda>
+<!--
+***************************************************************************
+* Copyright (C) 2016 by Pablo Daniel Pareja Obregon                       *
+*                                                                         *
+* This is free software; you can redistribute it and/or modify            *
+* it under the terms of the GNU General Public License as published by    *
+* the Free Software Foundation; either version 2, or (at your option)     *
+* any later version.                                                      *
+*                                                                         *
+* This software is distributed in the hope that it will be useful,        *
+* but WITHOUT ANY WARRANTY; without even the implied warranty of          *
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           *
+* GNU General Public License for more details.                            *
+*                                                                         *
+* You should have received a copy of the GNU General Public License       *
+* along with this package; see the file COPYING.  If not, write to        *
+* the Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,   *
+* Boston, MA 02110-1301, USA.                                             *
+***************************************************************************
+-->
+
 <caneda version="0.1.0">
     <components>
         <component name="PMOS Transistor" library="Semiconductor" pos="230,10" transform="1,0,0,1,0,0">
@@ -9,7 +30,7 @@
                 <property name="ic_vbs" value="0" visible="false"/>
                 <property name="ic_vds" value="0" visible="false"/>
                 <property name="ic_vgs" value="0" visible="false"/>
-                <property name="l" value="{2*l}" visible="true"/>
+                <property name="l" value="{lp}" visible="true"/>
                 <property name="label" value="M2" visible="false"/>
                 <property name="m" value="1.0" visible="false"/>
                 <property name="model" value="PMOS" visible="false"/>
@@ -19,7 +40,7 @@
                 <property name="pd" value="0.0" visible="false"/>
                 <property name="ps" value="0.0" visible="false"/>
                 <property name="temp" value="26.5" visible="false"/>
-                <property name="w" value="{10*l}" visible="true"/>
+                <property name="w" value="{wp}" visible="true"/>
             </properties>
         </component>
         <component name="NMOS Transistor" library="Semiconductor" pos="230,90" transform="1,0,0,1,0,0">
@@ -29,7 +50,7 @@
                 <property name="ic_vbs" value="0" visible="false"/>
                 <property name="ic_vds" value="0" visible="false"/>
                 <property name="ic_vgs" value="0" visible="false"/>
-                <property name="l" value="{2*l}" visible="true"/>
+                <property name="l" value="{l_n}" visible="true"/>
                 <property name="label" value="M1" visible="false"/>
                 <property name="m" value="1.0" visible="false"/>
                 <property name="model" value="NMOS" visible="false"/>
@@ -39,16 +60,18 @@
                 <property name="pd" value="0.0" visible="false"/>
                 <property name="ps" value="0.0" visible="false"/>
                 <property name="temp" value="26.5" visible="false"/>
-                <property name="w" value="{6*l}" visible="true"/>
+                <property name="w" value="{wn}" visible="true"/>
             </properties>
         </component>
     </components>
+
     <ports>
         <port name="vss" pos="240,150"/>
         <port name="vdd" pos="240,-60"/>
         <port name="in" pos="160,50"/>
         <port name="out" pos="280,50"/>
     </ports>
+    
     <wires>
         <wire start="200,50" end="160,50"/>
         <wire start="240,50" end="240,80"/>
