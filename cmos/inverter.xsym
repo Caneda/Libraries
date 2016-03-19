@@ -31,25 +31,12 @@
     </description>
 
     <symbol>
-        <painting name="ellipse" ellipse="0,0,10,10" pos="15,-5" transform="1,0,0,1,0,0">
-            <pen width="1" color="#808080" style="1"/>
-            <brush color="#000000" style="0"/>
-        </painting>
-        <painting name="line" line="0,0,-40,-20" pos="15,0" transform="1,0,0,1,0,0">
-            <pen width="1" color="#808080" style="1"/>
-        </painting>
-        <painting name="line" line="0,0,40,-20" pos="-25,20" transform="1,0,0,1,0,0">
-            <pen width="1" color="#808080" style="1"/>
-        </painting>
-        <painting name="line" line="0,0,0,40" pos="-25,-20" transform="1,0,0,1,0,0">
-            <pen width="1" color="#808080" style="1"/>
-        </painting>
-        <painting name="line" line="0,0,5,0" pos="25,0" transform="1,0,0,1,0,0">
-            <pen width="1" color="#808080" style="1"/>
-        </painting>
-        <painting name="line" line="0,0,5,0" pos="-30,0" transform="1,0,0,1,0,0">
-            <pen width="1" color="#808080" style="1"/>
-        </painting>
+        <painting name="ellipse" ellipse="0,0,10,10" pos="15,-5" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-40,-20" pos="15,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,40,-20" pos="-25,20" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,40" pos="-25,-20" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,5,0" pos="25,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,5,0" pos="-30,0" transform="1,0,0,1,0,0"/>
     </symbol>
 
     <ports>
