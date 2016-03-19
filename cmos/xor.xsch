@@ -23,48 +23,8 @@
 
 <caneda version="0.1.0">
     <components>
-        <component name="NMOS Transistor" library="Semiconductor" pos="260,110" transform="1,0,0,1,0,0">
-            <properties pos="20,-20">
-                <property name="ad" value="0.0" visible="false"/>
-                <property name="as" value="0.0" visible="false"/>
-                <property name="ic_vbs" value="0" visible="false"/>
-                <property name="ic_vds" value="0" visible="false"/>
-                <property name="ic_vgs" value="0" visible="false"/>
-                <property name="l" value="{l_n}" visible="true"/>
-                <property name="label" value="M8" visible="false"/>
-                <property name="m" value="1.0" visible="false"/>
-                <property name="model" value="NMOS" visible="false"/>
-                <property name="nrd" value="1.0" visible="false"/>
-                <property name="nrs" value="1.0" visible="false"/>
-                <property name="off" value="" visible="false"/>
-                <property name="pd" value="0.0" visible="false"/>
-                <property name="ps" value="0.0" visible="false"/>
-                <property name="temp" value="26.5" visible="false"/>
-                <property name="w" value="{wn}" visible="true"/>
-            </properties>
-        </component>
-        <component name="PMOS Transistor" library="Semiconductor" pos="260,30" transform="1,0,0,1,0,0">
-            <properties pos="20,-30">
-                <property name="ad" value="0.0" visible="false"/>
-                <property name="as" value="0.0" visible="false"/>
-                <property name="ic_vbs" value="0" visible="false"/>
-                <property name="ic_vds" value="0" visible="false"/>
-                <property name="ic_vgs" value="0" visible="false"/>
-                <property name="l" value="{lp}" visible="true"/>
-                <property name="label" value="M7" visible="false"/>
-                <property name="m" value="1.0" visible="false"/>
-                <property name="model" value="PMOS" visible="false"/>
-                <property name="nrd" value="1.0" visible="false"/>
-                <property name="nrs" value="1.0" visible="false"/>
-                <property name="off" value="" visible="false"/>
-                <property name="pd" value="0.0" visible="false"/>
-                <property name="ps" value="0.0" visible="false"/>
-                <property name="temp" value="26.5" visible="false"/>
-                <property name="w" value="{wp}" visible="true"/>
-            </properties>
-        </component>
-        <component name="NMOS Transistor" library="Semiconductor" pos="10,110" transform="1,0,0,1,0,0">
-            <properties pos="20,-20">
+        <component name="NMOS Transistor" library="Semiconductor" pos="-100,-10" transform="1,0,0,1,0,0">
+            <properties pos="20,-10">
                 <property name="ad" value="0.0" visible="false"/>
                 <property name="as" value="0.0" visible="false"/>
                 <property name="ic_vbs" value="0" visible="false"/>
@@ -83,7 +43,7 @@
                 <property name="w" value="{wn}" visible="true"/>
             </properties>
         </component>
-        <component name="PMOS Transistor" library="Semiconductor" pos="10,30" transform="1,0,0,1,0,0">
+        <component name="PMOS Transistor" library="Semiconductor" pos="-100,-90" transform="1,0,0,1,0,0">
             <properties pos="20,-30">
                 <property name="ad" value="0.0" visible="false"/>
                 <property name="as" value="0.0" visible="false"/>
@@ -103,8 +63,88 @@
                 <property name="w" value="{wp}" visible="true"/>
             </properties>
         </component>
-        <component name="PMOS4 Transistor" library="Semiconductor" pos="500,0" transform="0,1,-1,0,0,0">
-            <properties pos="-30,-20">
+        <component name="NMOS Transistor" library="Semiconductor" pos="100,-10" transform="1,0,0,1,0,0">
+            <properties pos="20,-10">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{l_n}" visible="true"/>
+                <property name="label" value="M7" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="NMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{wn}" visible="true"/>
+            </properties>
+        </component>
+        <component name="PMOS Transistor" library="Semiconductor" pos="100,-90" transform="1,0,0,1,0,0">
+            <properties pos="20,-30">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{lp}" visible="true"/>
+                <property name="label" value="M8" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="PMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{wp}" visible="true"/>
+            </properties>
+        </component>
+        <component name="NMOS Transistor" library="Semiconductor" pos="320,100" transform="1,0,0,1,0,0">
+            <properties pos="20,-20">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{l_n}" visible="true"/>
+                <property name="label" value="M9" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="NMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{wn}" visible="true"/>
+            </properties>
+        </component>
+        <component name="PMOS Transistor" library="Semiconductor" pos="320,-90" transform="1,0,0,1,0,0">
+            <properties pos="20,-20">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{lp}" visible="true"/>
+                <property name="label" value="M10" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="PMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{wp}" visible="true"/>
+            </properties>
+        </component>
+        <component name="PMOS Transistor" library="Semiconductor" pos="470,-90" transform="1,0,0,1,0,0">
+            <properties pos="20,-20">
                 <property name="ad" value="0.0" visible="false"/>
                 <property name="as" value="0.0" visible="false"/>
                 <property name="ic_vbs" value="0" visible="false"/>
@@ -123,8 +163,8 @@
                 <property name="w" value="{wp}" visible="true"/>
             </properties>
         </component>
-        <component name="NMOS4 Transistor" library="Semiconductor" pos="500,130" transform="0,-1,1,0,0,0">
-            <properties pos="0,20">
+        <component name="NMOS Transistor" library="Semiconductor" pos="320,160" transform="1,0,0,1,0,0">
+            <properties pos="20,-10">
                 <property name="ad" value="0.0" visible="false"/>
                 <property name="as" value="0.0" visible="false"/>
                 <property name="ic_vbs" value="0" visible="false"/>
@@ -143,64 +183,156 @@
                 <property name="w" value="{wn}" visible="true"/>
             </properties>
         </component>
+        <component name="NMOS Transistor" library="Semiconductor" pos="470,100" transform="1,0,0,1,0,0">
+            <properties pos="20,-20">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{l_n}" visible="true"/>
+                <property name="label" value="M13" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="NMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{wn}" visible="true"/>
+            </properties>
+        </component>
+        <component name="NMOS Transistor" library="Semiconductor" pos="470,160" transform="1,0,0,1,0,0">
+            <properties pos="20,-10">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{l_n}" visible="true"/>
+                <property name="label" value="M14" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="NMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{wn}" visible="true"/>
+            </properties>
+        </component>
+        <component name="PMOS Transistor" library="Semiconductor" pos="320,-20" transform="1,0,0,1,0,0">
+            <properties pos="20,-20">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{lp}" visible="true"/>
+                <property name="label" value="M15" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="PMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{wp}" visible="true"/>
+            </properties>
+        </component>
+        <component name="PMOS Transistor" library="Semiconductor" pos="470,-20" transform="1,0,0,1,0,0">
+            <properties pos="20,-20">
+                <property name="ad" value="0.0" visible="false"/>
+                <property name="as" value="0.0" visible="false"/>
+                <property name="ic_vbs" value="0" visible="false"/>
+                <property name="ic_vds" value="0" visible="false"/>
+                <property name="ic_vgs" value="0" visible="false"/>
+                <property name="l" value="{lp}" visible="true"/>
+                <property name="label" value="M16" visible="false"/>
+                <property name="m" value="1.0" visible="false"/>
+                <property name="model" value="PMOS" visible="false"/>
+                <property name="nrd" value="1.0" visible="false"/>
+                <property name="nrs" value="1.0" visible="false"/>
+                <property name="off" value="" visible="false"/>
+                <property name="pd" value="0.0" visible="false"/>
+                <property name="ps" value="0.0" visible="false"/>
+                <property name="temp" value="26.5" visible="false"/>
+                <property name="w" value="{wp}" visible="true"/>
+            </properties>
+        </component>
     </components>
     
     <ports>
-        <port name="B" pos="170,70"/>
-        <port name="A" pos="-80,70"/>
-        <port name="vss" pos="20,170"/>
-        <port name="vdd" pos="20,-40"/>
-        <port name="out" pos="380,20"/>
-        <port name="vdd" pos="500,40"/>
-        <port name="vss" pos="500,90"/>
+        <port name="A" pos="-170,-50"/>
+        <port name="vss" pos="-90,50"/>
+        <port name="vdd" pos="-90,-160"/>
+        <port name="notA" pos="-50,-50"/>
+        <port name="vdd" pos="110,-160"/>
+        <port name="notB" pos="150,-50"/>
+        <port name="B" pos="30,-50"/>
+        <port name="vss" pos="110,50"/>
+        <port name="vdd" pos="330,-160"/>
+        <port name="B" pos="290,160"/>
+        <port name="notA" pos="290,-90"/>
+        <port name="vss" pos="330,220"/>
+        <port name="out" pos="570,40"/>
+        <port name="A" pos="290,100"/>
+        <port name="vdd" pos="480,-160"/>
+        <port name="A" pos="440,-90"/>
+        <port name="vss" pos="480,220"/>
+        <port name="notA" pos="440,100"/>
+        <port name="notB" pos="440,160"/>
+        <port name="B" pos="290,-20"/>
+        <port name="notB" pos="440,-20"/>
     </ports>
     
     <wires>
-        <wire start="500,-80" end="500,-10"/>
-        <wire start="270,-80" end="500,-80"/>
-        <wire start="500,170" end="500,140"/>
-        <wire start="270,170" end="500,170"/>
-        <wire start="540,70" end="540,10"/>
-        <wire start="540,120" end="540,70"/>
-        <wire start="640,70" end="540,70"/>
-        <wire start="640,240" end="640,70"/>
-        <wire start="210,240" end="640,240"/>
-        <wire start="210,70" end="230,70"/>
-        <wire start="170,70" end="210,70"/>
-        <wire start="210,70" end="210,240"/>
-        <wire start="380,70" end="460,70"/>
-        <wire start="270,70" end="380,70"/>
-        <wire start="380,20" end="380,70"/>
-        <wire start="460,70" end="460,120"/>
-        <wire start="460,10" end="460,70"/>
-        <wire start="-40,-80" end="-40,70"/>
-        <wire start="270,-80" end="-40,-80"/>
-        <wire start="110,170" end="270,170"/>
-        <wire start="110,70" end="110,170"/>
-        <wire start="270,70" end="270,100"/>
-        <wire start="230,110" end="230,70"/>
-        <wire start="270,120" end="270,170"/>
-        <wire start="270,40" end="270,70"/>
-        <wire start="230,30" end="250,30"/>
-        <wire start="230,70" end="230,30"/>
-        <wire start="250,110" end="230,110"/>
-        <wire start="270,20" end="270,-80"/>
-        <wire start="-20,110" end="-20,70"/>
-        <wire start="20,70" end="20,100"/>
-        <wire start="20,40" end="20,70"/>
-        <wire start="-20,30" end="0,30"/>
-        <wire start="-20,70" end="-20,30"/>
-        <wire start="20,70" end="110,70"/>
-        <wire start="20,20" end="20,-40"/>
-        <wire start="0,110" end="-20,110"/>
-        <wire start="20,120" end="20,170"/>
-        <wire start="-80,70" end="-40,70"/>
-        <wire start="-40,70" end="-20,70"/>
-        <wire start="500,40" end="500,10"/>
-        <wire start="500,90" end="500,120"/>
-        <wire start="490,10" end="460,10"/>
-        <wire start="460,120" end="490,120"/>
-        <wire start="510,120" end="540,120"/>
-        <wire start="540,10" end="510,10"/>
+        <wire start="-130,-10" end="-130,-50"/>
+        <wire start="-90,-50" end="-90,-20"/>
+        <wire start="-90,-80" end="-90,-50"/>
+        <wire start="-130,-90" end="-110,-90"/>
+        <wire start="-130,-50" end="-130,-90"/>
+        <wire start="-90,-100" end="-90,-160"/>
+        <wire start="-110,-10" end="-130,-10"/>
+        <wire start="-90,0" end="-90,50"/>
+        <wire start="-170,-50" end="-130,-50"/>
+        <wire start="-90,-50" end="-50,-50"/>
+        <wire start="70,-10" end="70,-50"/>
+        <wire start="110,-50" end="110,-20"/>
+        <wire start="30,-50" end="70,-50"/>
+        <wire start="110,-100" end="110,-160"/>
+        <wire start="90,-10" end="70,-10"/>
+        <wire start="110,0" end="110,50"/>
+        <wire start="110,-50" end="150,-50"/>
+        <wire start="70,-90" end="90,-90"/>
+        <wire start="70,-50" end="70,-90"/>
+        <wire start="110,-80" end="110,-50"/>
+        <wire start="330,-100" end="330,-160"/>
+        <wire start="310,160" end="290,160"/>
+        <wire start="310,100" end="290,100"/>
+        <wire start="440,-90" end="460,-90"/>
+        <wire start="330,170" end="330,220"/>
+        <wire start="480,-100" end="480,-160"/>
+        <wire start="330,90" end="330,50"/>
+        <wire start="290,-90" end="310,-90"/>
+        <wire start="480,40" end="570,40"/>
+        <wire start="330,150" end="330,110"/>
+        <wire start="460,160" end="440,160"/>
+        <wire start="460,100" end="440,100"/>
+        <wire start="480,150" end="480,110"/>
+        <wire start="480,90" end="480,50"/>
+        <wire start="480,170" end="480,220"/>
+        <wire start="330,-80" end="330,-30"/>
+        <wire start="480,-80" end="480,-30"/>
+        <wire start="440,-20" end="460,-20"/>
+        <wire start="290,-20" end="310,-20"/>
+        <wire start="330,40" end="480,40"/>
+        <wire start="330,-10" end="330,40"/>
+        <wire start="330,40" end="330,50"/>
+        <wire start="480,-10" end="480,40"/>
+        <wire start="480,40" end="480,50"/>
     </wires>
 </caneda>
