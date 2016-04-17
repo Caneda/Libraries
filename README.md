@@ -7,4 +7,4 @@ In Caneda, libraries are folders with schematics and symbols inside. To use any 
 
 For details visit the project's homepage:
 
-http://caneda.github.io
+http://www.caneda.org
