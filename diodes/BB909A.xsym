@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BB909A" version="0.1.0" label="D">
+    <displaytext>
+        <lang lang="C">BB909A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,10,0" pos="-20,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="10,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,-20,10" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-20" pos="-10,10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,20,10" pos="-10,-10" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="+" pos="-20,0"/>
+        <port name="-" pos="20,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BB909A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="D%label %port{+} %port{-} BB909A %n
+                                    %model{BB909A D(BV=1.00E+02 CJO=3.70E-11 EG=1.11E+00 FC=4.96E-01 IBV=1.00E-04 IS=1.00E-14 M=8.98E-01 N=9.92E-01 RS=1.09E-03 TNOM=2.70E+01 TT=4.98E-09 VJ=9.98E+00 XTI=2.99E+00)} %n"/>
+    </models>
+</component>

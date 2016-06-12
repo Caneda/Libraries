@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="30SLJQ030" version="0.1.0" label="D">
+    <displaytext>
+        <lang lang="C">30SLJQ030</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,10,0" pos="-20,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="10,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,-20,10" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-20" pos="-10,10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,20,10" pos="-10,-10" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="+" pos="-20,0"/>
+        <port name="-" pos="20,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="30SLJQ030" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="D%label %port{+} %port{-} 30SLJQ030 %n
+                                    %model{30SLJQ030 D(BV=3.01E+01 CJO=5.89E-09 EG=5.97E-01 FC=4.96E-01 IBV=1.01E-04 IS=2.10E-07 M=4.82E-01 N=8.55E-01 RS=6.71E-03 TT=0.00E+00 VJ=4.02E-01 XTI=5.00E-01)} %n"/>
+    </models>
+</component>

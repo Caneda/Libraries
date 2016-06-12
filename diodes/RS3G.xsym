@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="RS3G" version="0.1.0" label="D">
+    <displaytext>
+        <lang lang="C">RS3G</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,10,0" pos="-20,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="10,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,-20,10" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-20" pos="-10,10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,20,10" pos="-10,-10" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="+" pos="-20,0"/>
+        <port name="-" pos="20,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="RS3G" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="D%label %port{+} %port{-} RS3G %n
+                                    %model{RS3G D(BV=3.98E+02 CJO=9.22E-11 IBV=5.00E-06 IS=1.99E-07 M=3.33E-01 N=2.24E+00 RS=2.56E-02 TT=2.16E-07)} %n"/>
+    </models>
+</component>

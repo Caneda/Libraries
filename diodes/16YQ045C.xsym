@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="16YQ045C" version="0.1.0" label="D">
+    <displaytext>
+        <lang lang="C">16YQ045C</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,10,0" pos="-20,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="10,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,-20,10" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-20" pos="-10,10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,20,10" pos="-10,-10" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="+" pos="-20,0"/>
+        <port name="-" pos="20,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="16YQ045C" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="D%label %port{+} %port{-} 16YQ045C %n
+                                    %model{16YQ045C D(BV=4.54E+01 CJO=6.86E-09 EG=1.31E+00 FC=5.05E-01 IBV=1.01E-04 IS=5.02E-07 M=4.92E-01 N=9.81E-01 RS=1.31E-02 TT=1.00E-09 VJ=5.34E-01 XTI=2.96E+00)} %n"/>
+    </models>
+</component>

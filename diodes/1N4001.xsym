@@ -31,6 +31,6 @@
 
     <models>
         <model type="spice" syntax="D%label %port{+} %port{-} 1N4001 %n
-                                    %model{1N4001 D(IS=14n N=1.98 RS=33.9Meg IKF=94.8 CJO=25.9p M=0.44 VJ=0.32 BV=75 IBV=10u TT=5.7u)} %n"/>
+                                    %model{1N4001 D(BV=7.44E+01 CJO=2.61E-11 EG=1.11E+00 FC=4.99E-01 IBV=1.00E-05 IKF=9.46E+01 IS=1.40E-08 M=4.40E-01 N=1.99E+00 RS=3.37E-02 TT=5.70E-06 VJ=3.26E-01 XTI=2.97E+00)} %n"/>
     </models>
 </component>

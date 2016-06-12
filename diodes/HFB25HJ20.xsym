@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="HFB25HJ20" version="0.1.0" label="D">
+    <displaytext>
+        <lang lang="C">HFB25HJ20</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,10,0" pos="-20,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="10,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,-20,10" pos="10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-20" pos="-10,10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,20,10" pos="-10,-10" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="+" pos="-20,0"/>
+        <port name="-" pos="20,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="HFB25HJ20" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="D%label %port{+} %port{-} HFB25HJ20 %n
+                                    %model{HFB25HJ20 D(BV=1.98E+02 CJO=4.63E-10 EG=1.30E+00 FC=4.97E-01 IBV=9.92E-05 IS=5.83E-07 M=3.33E-01 N=2.00E+00 RS=5.09E-03 TT=1.01E-09 VJ=3.96E-01 XTI=2.96E+00)} %n"/>
+    </models>
+</component>
