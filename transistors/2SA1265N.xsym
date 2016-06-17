@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2SA1265N" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2SA1265N</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2SA1265N" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2SA1265N %n
+                                    %model{2SA1265N PNP(BF=1.02E+02 BR=4.04E+00 CJC=1.15E-09 CJE=4.74E-09 FC=8.02E-01 IKF=1.74E+01 IS=1.01E-12 ISC=8.02E-10 ISE=1.50E-10 ITF=7.93E+00 MJE=4.99E-01 NC=1.64E+00 NE=2.00E+00 RB=5.05E-01 RBM=4.99E-01 RC=6.96E-02 RE=4.73E-02 TF=4.54E-09 TR=9.96E-07 VAF=1.11E+02 VJC=7.56E-01 VJE=9.01E-01 VTF=1.00E+01 XCJC=4.99E-01 XTB=2.71E+00 XTF=1.51E+00)} %n"/>
+    </models>
+</component>

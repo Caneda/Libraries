@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MJE15030" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MJE15030</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MJE15030" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MJE15030 %n
+                                    %model{MJE15030 NPN(BF=1.51E+02 BR=2.69E+00 CJC=5.29E-10 CJE=2.01E-09 EG=1.12E+00 FC=5.03E-01 IKF=4.04E+00 IS=1.37E-10 MJC=3.49E-01 MJE=4.01E-01 NF=1.14E+00 NR=1.12E+00 RB=5.01E-01 RBM=5.02E-01 RC=5.15E-02 RE=1.00E-02 TF=1.87E-09 TR=7.61E-07 VAF=2.01E+02 VAR=5.01E+02 VJC=3.41E-01 VJE=3.43E-01 XCJC=5.02E-01 XTB=1.73E+00 XTI=3.03E+00)} %n"/>
+    </models>
+</component>

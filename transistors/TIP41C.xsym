@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="TIP41C" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">TIP41C</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="TIP41C" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} TIP41C %n
+                                    %model{TIP41C NPN(BF=2.60E+02 BR=2.63E+01 CJC=1.09E-10 CJE=1.91E-10 EG=1.21E+00 FC=7.94E-01 IKF=5.25E-01 IKR=3.57E+00 IRB=9.91E-02 IS=7.61E-11 ISC=9.99E-09 ISE=1.00E-08 ITF=9.92E-04 MJC=2.32E-01 MJE=2.59E-01 NC=1.62E+00 NE=2.19E+00 NF=1.10E+00 NR=1.50E+00 PTF=0.00E+00 RB=4.52E+00 RBM=9.96E-02 RC=8.08E-02 RE=1.62E-02 TF=1.00E-08 TR=8.99E-08 VAF=1.01E+02 VAR=9.93E+02 VJC=7.32E-01 VJE=3.99E-01 VTF=7.16E+00 XCJC=8.07E-01 XTB=1.00E-01 XTF=4.04E+00 XTI=1.01E+00)} %n"/>
+    </models>
+</component>

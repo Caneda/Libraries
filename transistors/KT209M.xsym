@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT209M" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT209M</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT209M" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT209M %n
+                                    %model{KT209M PNP(BF=1.00E+02 BR=2.51E+00 CJC=1.60E-11 CJE=2.49E-11 IKF=7.02E-02 IRB=5.02E-04 IS=2.42E-14 ISC=1.00E-11 ISE=5.99E-13 ITF=2.01E-01 MJC=3.30E-01 MJE=3.53E-01 NC=1.98E+00 NE=1.49E+00 RB=9.96E+01 RBM=4.01E+01 RC=1.80E+00 TF=7.98E-09 TR=6.38E-08 VAF=3.02E+01 VJC=6.73E-01 VJE=7.24E-01 VTF=5.03E+00 XCJC=4.99E-01 XTB=1.49E+00 XTF=1.99E+00 XTI=3.01E+00)} %n"/>
+    </models>
+</component>

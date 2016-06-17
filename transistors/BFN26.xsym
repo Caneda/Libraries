@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFN26" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFN26</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFN26" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFN26 %n
+                                    %model{BFN26 NPN(BF=6.98E+01 BR=1.77E+01 CJC=1.56E-11 CJE=1.32E-10 EG=1.10E+00 FC=5.01E-01 IKF=9.99E+00 IKR=1.01E+00 IRB=1.31E-03 IS=1.59E-13 ISC=8.99E-11 ISE=3.63E-16 ITF=1.33E+00 MJC=5.79E-01 MJE=4.01E-01 NC=1.46E+00 NE=1.22E+00 NF=1.03E+00 NR=1.11E+00 RB=3.26E+01 RBM=7.70E-02 RC=4.07E-01 RE=4.23E-01 TF=1.73E-09 TR=0.00E+00 VAF=4.54E+01 VAR=9.05E+01 VJC=4.65E-01 VJE=3.00E-01 VTF=9.92E+05 XTB=1.51E+00 XTF=1.00E+02 XTI=3.01E+00)} %n"/>
+    </models>
+</component>

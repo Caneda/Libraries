@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BCW60C" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BCW60C</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BCW60C" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BCW60C %n
+                                    %model{BCW60C NPN(BF=3.63E+02 BR=5.04E+00 CJC=1.98E-11 CJE=8.05E-12 IKF=1.29E+00 IS=2.01E-14 RB=1.01E+01 RC=3.03E+00 RE=9.97E-01 TF=5.99E-10 TR=1.01E-07 VAF=6.56E+01 XTB=1.51E+00)} %n"/>
+    </models>
+</component>

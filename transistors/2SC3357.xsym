@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2SC3357" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2SC3357</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2SC3357" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2SC3357 %n
+                                    %model{2SC3357 NPN(BF=1.62E+02 BR=1.08E+01 CJC=1.08E-12 CJE=1.83E-12 EG=1.11E+00 FC=4.97E-01 IKF=5.78E-01 IKR=2.80E-02 IRB=7.66E-04 IS=6.83E-16 ISC=6.15E-18 ISE=9.94E-19 ITF=6.05E-02 MJC=3.51E-01 MJE=4.62E-01 NC=1.11E+00 NE=1.19E+00 PTF=2.00E+01 RB=3.00E+00 RBM=9.98E-01 RC=3.48E+00 RE=2.69E+00 TF=2.32E-11 TR=9.98E-11 VAF=5.08E+01 VAR=2.09E+00 VJC=6.14E-01 VJE=1.01E+00 VTF=6.73E-01 XCJC=9.91E-02 XTB=0.00E+00 XTF=3.88E-01 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

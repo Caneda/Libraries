@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BCW61D" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BCW61D</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BCW61D" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BCW61D %n
+                                    %model{BCW61D PNP(BF=4.68E+02 BR=7.16E+00 CJC=1.14E-11 CJE=8.37E-12 EG=1.11E+00 FC=5.04E-01 IKF=1.25E-01 IKR=4.27E-01 IS=2.65E-14 ISC=9.03E-11 ISE=2.29E-13 ITF=7.75E-01 MJC=3.59E-01 MJE=3.84E-01 NC=2.25E+00 NE=2.11E+00 NKF=5.01E-01 RC=2.58E+00 TF=5.96E-10 TR=9.96E-09 VAF=3.56E+01 VJC=5.02E-01 VJE=5.04E-01 VTF=9.98E-01 XTB=1.51E+00 XTF=2.33E+02 XTI=3.03E+00)} %n"/>
+    </models>
+</component>

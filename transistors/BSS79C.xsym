@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BSS79C" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BSS79C</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BSS79C" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BSS79C %n
+                                    %model{BSS79C NPN(BF=3.28E+02 BR=2.03E+01 CJC=1.55E-11 CJE=4.74E-11 EG=1.11E+00 FC=5.04E-01 IKF=3.93E-01 IKR=1.24E+00 IS=1.01E-12 ISC=2.62E-09 ISE=8.95E-12 ITF=3.40E+00 MJC=3.42E-01 MJE=3.36E-01 NC=1.68E+00 NE=1.74E+00 NKF=5.28E-01 RC=7.86E-01 TF=5.23E-10 TR=2.87E-07 VAF=9.98E+01 VJC=5.03E-01 VJE=4.98E-01 VTF=9.93E+00 XTB=1.49E+00 XTF=8.30E+01 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

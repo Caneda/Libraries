@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="UCBU326A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">UCBU326A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="UCBU326A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} UCBU326A %n
+                                    %model{UCBU326A NPN(BF=3.43E+01 BR=2.81E-02 CJC=4.97E-12 CJE=2.01E-12 IKF=1.52E+00 IKR=1.00E+03 IS=9.74E-15 ISC=1.00E-10 ISE=3.73E-13 ITF=9.16E-03 MJC=4.99E-01 MJE=5.04E-01 NE=1.37E+00 NF=9.21E-01 RC=4.83E-02 RE=5.74E-02 TF=2.51E-08 TR=3.32E-04 VAF=1.01E+02 VTF=1.01E+01 XTF=5.03E-01)} %n"/>
+    </models>
+</component>

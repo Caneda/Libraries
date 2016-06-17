@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="FMMT495" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">FMMT495</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="FMMT495" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} FMMT495 %n
+                                    %model{FMMT495 NPN(BF=2.06E+02 BR=2.42E+01 CJC=1.52E-11 CJE=1.15E-10 IKF=3.98E+00 IS=9.92E-14 ISC=1.01E-13 ISE=9.91E-14 MJC=2.71E-01 MJE=3.32E-01 NC=1.21E+00 NE=1.50E+00 NF=1.00E+00 NR=9.74E-01 RB=4.00E-01 RC=8.03E-02 RE=6.96E-02 TF=7.96E-10 TR=1.20E-07 VAF=3.00E+02 VAR=4.48E+01 VJC=3.52E-01 VJE=6.76E-01 XTB=1.41E+00)} %n"/>
+    </models>
+</component>

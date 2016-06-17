@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT646A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT646A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT646A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT646A %n
+                                    %model{KT646A NPN(BF=1.99E+02 BR=4.57E+00 CJC=2.12E-11 CJE=3.46E-11 EG=1.11E+00 FC=5.04E-01 IKF=4.09E-01 IKR=2.08E-01 IS=1.71E-14 ISC=1.34E-12 ISE=1.55E-13 ITF=6.48E-01 MJC=3.31E-01 MJE=3.31E-01 NC=2.00E+00 NE=1.38E+00 RB=1.51E+01 RC=3.53E-01 TF=1.80E-09 TR=4.99E-08 VAF=1.23E+02 VAR=7.54E+01 VJC=6.96E-01 VJE=6.96E-01 VTF=5.99E+01 XTB=1.49E+00 XTF=1.01E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

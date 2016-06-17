@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT630V" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT630V</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT630V" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT630V %n
+                                    %model{KT630V NPN(BF=7.97E+01 BR=9.99E-01 CJC=2.49E-11 CJE=6.54E-11 EG=1.10E+00 FC=5.04E-01 IKF=8.00E-01 IKR=7.06E-01 IS=4.39E-16 ISC=1.00E-06 ISE=9.96E-08 ITF=7.56E-01 MJC=3.30E-01 MJE=3.34E-01 NC=1.98E+00 NE=1.50E+00 RB=9.97E+00 RC=7.04E-01 TF=2.01E-09 TR=4.98E-08 VAF=1.21E+02 VJC=7.53E-01 VJE=7.43E-01 VTF=1.21E+02 XTB=1.51E+00 XTF=1.20E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

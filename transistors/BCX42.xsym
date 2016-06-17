@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BCX42" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BCX42</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BCX42" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BCX42 %n
+                                    %model{BCX42 PNP(BF=1.51E+02 BR=1.15E-01 CJC=3.87E-11 CJE=5.69E-11 EG=1.10E+00 FC=4.98E-01 IKF=1.18E-01 IKR=9.94E-01 IRB=8.04E-02 IS=7.56E-14 ISC=1.70E-12 ISE=1.89E-14 ITF=1.28E+00 MJC=4.86E-01 MJE=4.41E-01 NC=2.00E+00 NE=1.27E+00 NF=1.01E+00 NR=1.22E+00 RB=2.42E+00 RBM=4.95E+00 RC=8.98E-01 RE=9.92E-03 TF=8.21E-10 TR=1.98E-07 VAF=3.28E+02 VAR=2.61E+01 VJC=3.02E-01 VJE=3.13E-01 VTF=1.00E+06 XTB=1.49E+00 XTF=4.96E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

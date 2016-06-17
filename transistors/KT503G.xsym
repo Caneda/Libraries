@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT503G" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT503G</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT503G" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT503G %n
+                                    %model{KT503G NPN(BF=1.66E+02 BR=1.69E+00 CJC=2.35E-11 CJE=3.07E-11 EG=1.11E+00 FC=5.00E-01 IKF=6.16E-01 IKR=6.99E-01 IS=9.98E-15 ISC=4.79E-14 ISE=1.00E-13 ITF=1.01E+00 MJC=3.29E-01 MJE=3.30E-01 NC=1.72E+00 NE=1.46E+00 NKF=4.69E-01 RB=6.01E+00 RC=1.20E+00 TF=1.00E-08 TR=3.89E-07 VAF=1.46E+02 VJC=7.52E-01 VJE=7.53E-01 VTF=4.03E+01 XTB=1.50E+00 XTF=2.02E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

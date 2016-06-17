@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC178B" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC178B</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC178B" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC178B %n
+                                    %model{BC178B PNP(BF=2.73E+02 BR=3.00E+00 CJC=1.10E-11 CJE=3.33E-11 EG=1.11E+00 FC=5.00E-01 IKF=2.46E-01 IKR=8.15E+00 IS=3.35E-13 ISC=1.75E-09 ISE=2.80E-12 ITF=1.56E+00 MJC=2.21E-01 MJE=3.32E-01 NC=2.09E+00 NE=1.91E+00 NKF=5.38E-01 RC=1.80E+00 TF=8.49E-10 TR=1.00E-08 VAF=3.05E+01 VJC=4.99E-01 VJE=5.04E-01 VTF=9.98E+00 XTB=1.49E+00 XTF=1.83E+01 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

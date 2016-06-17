@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BSX45-10" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BSX45-10</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BSX45-10" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BSX45-10 %n
+                                    %model{BSX45-10 NPN(BF=3.67E+02 BR=9.60E+02 CJC=6.07E-11 CJE=9.56E-11 EG=1.11E+00 FC=5.00E-01 IKF=1.26E-01 IKR=2.44E+00 IS=6.60E-14 ISC=3.65E-09 ISE=7.51E-13 ITF=1.08E+00 MJC=3.36E-01 MJE=3.33E-01 NC=1.79E+00 NE=1.40E+00 NKF=5.41E-01 RC=5.98E-01 TF=1.36E-09 TR=9.92E-09 VAF=9.95E+01 VJC=4.97E-01 VJE=4.98E-01 VTF=1.01E+01 XTB=1.50E+00 XTF=2.24E+01 XTI=2.99E+00)} %n"/>
+    </models>
+</component>

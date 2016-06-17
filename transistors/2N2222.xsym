@@ -24,13 +24,13 @@
     <properties>
         <property name="model" default="2N2222" unit="" visible="true">
             <description>
-                <lang lang="C">Device model</lang>
+                <lang lang="C">Device model.</lang>
             </description>
         </property>
     </properties>
 
     <models>
         <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2N2222 %n
-                                    %model{2N2222 NPN(IS=10f VAF=100 BF=200 IKF=0.3 XTB=1.5 BR=3 CJC=8p CJE=25p TR=100n TF=400p ITF=1 VTF=2 XTF=3 RB=10 RC=0.3 RE=0.2)} %n"/>
+                                    %model{2N2222 NPN(BF=2.02E+02 BR=3.00E+00 CJC=7.92E-12 CJE=2.51E-11 IKF=2.97E-01 IS=1.00E-14 ITF=9.95E-01 RB=1.00E+01 RC=3.03E-01 RE=2.00E-01 TF=4.00E-10 TR=9.99E-08 VAF=1.01E+02 VTF=1.99E+00 XTB=1.51E+00 XTF=3.02E+00)} %n"/>
     </models>
 </component>

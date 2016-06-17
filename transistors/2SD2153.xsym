@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2SD2153" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2SD2153</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2SD2153" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2SD2153 %n
+                                    %model{2SD2153 NPN(BF=1.38E+03 BR=8.30E+01 CJC=7.34E-11 CJE=1.98E-10 IKF=1.66E+00 IKR=2.62E-01 IS=1.99E-12 ISC=2.01E-12 ISE=1.99E-12 ITF=9.85E+00 MJC=4.49E-01 MJE=5.87E-01 NC=4.96E+00 NE=2.13E+00 RB=4.66E-01 RC=1.43E-02 RE=7.01E-02 TF=4.04E-10 TR=1.75E-08 VAF=2.40E+01 VAR=9.93E+01 VTF=1.38E+01 XTB=1.49E+00 XTF=1.29E+02)} %n"/>
+    </models>
+</component>

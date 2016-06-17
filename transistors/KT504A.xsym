@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT504A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT504A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT504A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT504A %n
+                                    %model{KT504A NPN(BF=2.09E+02 BR=1.93E+00 CJC=3.86E-11 CJE=5.97E-10 EG=1.10E+00 FC=5.01E-01 IKF=1.14E+00 IKR=8.18E-02 IS=2.70E-14 ISC=2.73E-13 ISE=4.96E-13 ITF=1.09E+01 MJC=3.49E-01 MJE=3.33E-01 NC=1.44E+00 NE=1.42E+00 NKF=5.94E-01 RB=6.72E+00 RC=5.48E-01 TF=1.87E-09 TR=8.10E-07 VAF=1.39E+02 VJC=7.44E-01 VJE=6.54E-01 VTF=3.99E+01 XTB=1.49E+00 XTF=2.00E+00 XTI=2.99E+00)} %n"/>
+    </models>
+</component>

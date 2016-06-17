@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2SA1406" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2SA1406</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2SA1406" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2SA1406 %n
+                                    %model{2SA1406 PNP(BF=3.90E+02 BR=4.03E+00 CJC=5.40E-12 CJE=1.68E-11 IKF=6.01E-02 IKR=8.98E-02 IS=1.00E-14 ISE=2.59E-12 MJC=2.98E-01 MJE=5.04E-01 NE=1.98E+00 NF=1.00E+00 NR=1.01E+00 RB=7.46E+00 RC=7.57E-01 RE=1.86E+00 TF=3.95E-10 TR=2.74E-07 VAF=2.54E+02 VAR=1.59E+01 VJC=2.97E-01 VJE=1.09E+00 XTB=1.50E+00)} %n"/>
+    </models>
+</component>

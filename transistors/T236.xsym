@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="T236" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">T236</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="T236" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} T236 %n
+                                    %model{T236 NPN(BF=8.65E+01 BR=6.15E+01 CJC=2.99E-12 CJE=3.33E-14 EG=1.12E+00 FC=5.61E-01 IKF=1.91E+00 IKR=1.93E-02 IRB=2.09E-04 IS=9.75E-15 ISC=4.57E-18 ISE=3.77E-15 ITF=4.77E-03 MJC=3.92E-01 MJE=5.20E-01 NC=1.28E+00 NE=7.54E-01 NF=4.68E-01 NR=1.14E+00 RB=1.02E+00 RBM=0.00E+00 RC=7.51E-02 RE=1.48E+00 TF=4.31E-11 TR=1.37E-10 VAF=3.33E+01 VAR=4.60E+01 VJC=1.00E+00 VJE=8.70E-01 VTF=1.17E-01 XCJC=2.06E-02 XTB=1.49E+00 XTF=2.66E-01 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC848A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC848A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC848A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC848A %n
+                                    %model{BC848A NPN(BF=1.82E+02 BR=3.97E+00 CJC=7.34E-12 CJE=9.51E-12 EG=1.12E+00 FC=4.97E-01 IKF=1.20E-01 IKR=2.71E+00 IS=6.98E-15 ISC=1.07E-14 ISE=8.48E-14 ITF=1.59E+00 MJC=3.32E-01 MJE=3.35E-01 NC=2.44E+00 NE=1.71E+00 NKF=5.22E-01 RC=1.38E+00 TF=6.57E-10 TR=9.94E-09 VAF=1.07E+02 VJC=5.03E-01 VJE=5.02E-01 VTF=1.01E+01 XTB=1.50E+00 XTF=1.44E+01 XTI=3.03E+00)} %n"/>
+    </models>
+</component>

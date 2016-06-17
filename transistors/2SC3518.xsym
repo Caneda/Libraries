@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2SC3518" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2SC3518</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2SC3518" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2SC3518 %n
+                                    %model{2SC3518 NPN(BF=4.28E+02 BR=4.97E+02 CJC=2.49E-10 CJE=1.26E-09 IKF=2.01E+01 IKR=5.04E+00 IS=7.08E-13 ISC=8.26E-13 ISE=7.09E-13 ITF=9.22E+01 MJC=4.14E-01 MJE=3.56E-01 NC=1.15E+00 NE=1.33E+00 NKF=9.43E-01 RB=7.38E-01 RC=4.56E-02 TF=1.32E-09 TR=4.88E-08 TRB1=3.00E-02 TRC1=2.00E-03 VAF=5.81E+01 VAR=9.98E+01 VJC=5.83E-01 VJE=7.01E-01 VTF=4.48E+00 XTB=1.49E+00 XTF=1.03E+02)} %n"/>
+    </models>
+</component>

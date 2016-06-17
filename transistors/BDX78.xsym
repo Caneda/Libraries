@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BDX78" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BDX78</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BDX78" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BDX78 %n
+                                    %model{BDX78 PNP(BF=2.58E+02 BR=1.76E+00 CJC=3.39E-10 CJE=1.02E-09 EG=1.12E+00 FC=4.95E-01 IKF=1.87E+00 IKR=2.16E-01 IS=1.55E-12 ISC=4.85E-11 ISE=1.43E-11 ITF=8.59E+01 MJC=3.34E-01 MJE=3.35E-01 NC=1.58E+00 NE=1.68E+00 NKF=6.03E-01 RC=5.39E-02 TF=1.13E-08 TR=9.93E-07 VAF=9.94E+01 VJC=5.04E-01 VJE=4.97E-01 VTF=9.98E+00 XTB=1.49E+00 XTF=1.00E+01 XTI=3.01E+00)} %n"/>
+    </models>
+</component>

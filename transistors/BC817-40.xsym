@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC817-40" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC817-40</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC817-40" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC817-40 %n
+                                    %model{BC817-40 NPN(BF=4.15E+02 BR=2.46E+01 CJC=1.31E-11 CJE=3.53E-11 CJS=0.00E+00 EG=1.11E+00 FC=8.61E-01 IKF=4.92E-01 IKR=2.02E-01 IRB=1.01E+03 IS=6.27E-14 ISC=1.87E-13 ISE=4.50E-15 ITF=5.14E+00 MJC=3.76E-01 MJE=3.69E-01 MJS=3.35E-01 NC=1.29E+00 NE=1.78E+00 NF=9.96E-01 NR=9.99E-01 PTF=0.00E+00 RB=1.00E+00 RBM=1.01E+00 RC=1.44E-01 RE=2.28E-01 TF=4.79E-10 TR=6.97E-11 VAF=9.79E+01 VAR=2.52E+01 VJC=3.22E-01 VJE=7.19E-01 VJS=7.47E-01 VTF=3.67E+00 XCJC=4.53E-01 XTB=0.00E+00 XTF=1.21E+02 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

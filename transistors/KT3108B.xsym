@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT3108B" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT3108B</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT3108B" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT3108B %n
+                                    %model{KT3108B PNP(BF=1.12E+02 BR=3.01E+00 CJC=4.56E-12 CJE=3.80E-12 EG=1.11E+00 FC=5.04E-01 IKF=2.77E-02 IKR=5.59E-02 IS=8.63E-16 ISC=1.26E-12 ISE=3.80E-08 ITF=5.76E-02 MJC=3.27E-01 MJE=3.31E-01 NC=2.00E+00 NE=1.25E+01 RB=5.16E+01 RC=4.23E+00 TF=2.92E-10 TR=4.33E-08 VAF=8.58E+01 VAR=2.57E+01 VJC=6.44E-01 VJE=6.87E-01 VTF=5.50E+01 XTB=1.51E+00 XTF=2.00E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT502V" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT502V</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT502V" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT502V %n
+                                    %model{KT502V PNP(BF=1.18E+02 BR=2.28E+00 CJC=2.36E-11 CJE=2.65E-11 EG=1.11E+00 FC=5.04E-01 IKF=1.50E-01 IKR=2.06E+00 IS=7.55E-15 ISC=1.40E-14 ISE=6.10E-14 ITF=9.91E-01 MJC=3.32E-01 MJE=3.32E-01 NC=1.35E+00 NE=1.40E+00 NKF=5.96E-01 RB=9.92E+00 RC=1.21E+00 TF=1.03E-08 TR=3.67E-07 VAF=1.15E+02 VJC=7.45E-01 VJE=7.51E-01 VTF=2.48E+01 XTB=1.49E+00 XTF=2.01E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

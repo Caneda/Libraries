@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="VN10KM" version="0.1.0" label="M">
+    <displaytext>
+        <lang lang="C">VN10KM</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,7.5,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,16" pos="-2.5,-8" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,6" pos="10,0" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="VN10KM" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="M%label %port{d} %port{g} %port{s} %port{s} VN10KM %n
+                                    %model{VN10KM NMOS(CBD=3.27E-11 CBS=3.92E-11 CGBO=3.35E-07 CGDO=2.01E-08 CGSO=2.40E-08 IS=6.45E-14 KP=1.54E-01 LAMBDA=2.93E-04 LEVEL=1.00E+00 MJ=4.56E-01 PB=7.93E-01 PHI=7.54E-01 RD=7.58E-01 RS=7.63E-01 VTO=1.41E+00)} %n"/>
+    </models>
+</component>

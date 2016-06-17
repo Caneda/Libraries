@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MJE350" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MJE350</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MJE350" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MJE350 %n
+                                    %model{MJE350 PNP(BF=1.57E+02 BR=1.01E-01 CJC=1.01E-11 CJE=9.96E-12 CJS=0.00E+00 EG=1.21E+00 FC=4.99E-01 IKF=5.66E-02 IKR=9.94E-02 IRB=2.04E-01 IS=6.01E-15 ISC=1.01E-13 ISE=4.44E-12 ITF=9.97E-03 MJC=3.32E-01 MJE=3.31E-01 MJS=5.03E-01 NC=1.98E+00 NE=1.58E+00 NF=9.08E-01 NR=1.04E+00 PTF=0.00E+00 RB=9.91E-02 RBM=9.94E-02 RC=3.52E-01 RE=7.05E-02 TF=1.01E-09 TR=9.95E-08 VAF=2.34E+01 VAR=4.14E+00 VJC=7.57E-01 VJE=7.46E-01 VJS=7.44E-01 VTF=1.00E+01 XCJC=8.91E-01 XTB=1.04E+00 XTF=9.93E-01 XTI=3.81E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KSE44H" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KSE44H</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KSE44H" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KSE44H %n
+                                    %model{KSE44H NPN(BF=2.26E+02 BR=2.58E+01 CJC=2.65E-10 CJE=1.24E-09 EG=1.16E+00 FC=5.05E-01 IKF=5.72E+00 IKR=8.28E-01 IRB=7.39E-05 IS=8.44E-13 ISC=6.82E-14 ISE=2.76E-11 LEVEL=9.94E-01 MJC=4.23E-01 MJE=3.40E-01 NC=9.96E-01 NE=2.01E+00 NF=9.59E-01 NR=9.51E-01 RB=1.00E+02 RBM=3.15E+00 RC=1.50E-01 RE=9.92E-04 VAF=5.69E+02 VAR=4.98E+02 VJC=5.35E-01 VJE=6.94E-01 XCJC=4.72E-01 XTB=1.26E+00 XTI=3.01E+00)} %n"/>
+    </models>
+</component>

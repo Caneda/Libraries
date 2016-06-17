@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFP405" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFP405</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFP405" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFP405 %n
+                                    %model{BFP405 NPN(BF=8.33E+01 BR=1.05E+01 CJC=9.66E-14 CJE=3.72E-15 EG=1.11E+00 FC=9.88E-01 IKF=1.64E-01 IKR=2.48E-01 IRB=2.13E-04 IS=2.09E-16 ISC=3.75E-17 ISE=1.57E-14 ITF=1.33E-03 MJC=4.86E-01 MJE=3.74E-01 NC=1.31E+00 NE=1.77E+00 NF=1.04E+00 NR=9.63E-01 RB=1.49E+01 RBM=1.36E+00 RC=1.26E-01 RE=1.94E+00 TF=4.59E-12 TR=1.48E-09 VAF=3.89E+01 VAR=3.41E+01 VJC=1.00E+00 VJE=6.99E-01 VTF=1.98E-01 XCJC=8.10E-02 XTB=1.50E+00 XTF=3.63E-01 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

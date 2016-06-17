@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="PF5301-2" version="0.1.0" label="J">
+    <displaytext>
+        <lang lang="C">PF5301-2</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="arrow" line="0,0,11.5,0" pos="-10,0" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="PF5301-2" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="J%label %port{d} %port{g} %port{s} PF5301-2 %n
+                                    %model{PF5301-2 NJF(AF=1.01E+00 BETA=7.28E-05 CGD=3.95E-12 CGS=4.92E-12 FC=5.00E-01 IS=5.31E-15 KF=1.09E-16 LAMBDA=1.49E-02 M=4.33E-01 N=1.01E+00 PB=9.91E-01 RD=1.00E+00 RS=9.95E-01 VTO=-2.10E+00)} %n"/>
+    </models>
+</component>

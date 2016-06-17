@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BD132" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BD132</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BD132" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BD132 %n
+                                    %model{BD132 PNP(BF=1.34E+02 BR=1.86E+01 CJC=2.70E-10 CJE=3.98E-10 EG=1.11E+00 FC=7.82E-01 IKF=3.12E+00 IKR=3.53E-01 IRB=5.94E-04 IS=2.15E-13 ISC=3.63E-13 ISE=2.42E-14 ITF=3.70E+00 MJC=3.94E-01 MJE=4.17E-01 NC=1.20E+00 NE=1.27E+00 NF=9.99E-01 NR=9.92E-01 RB=1.31E+01 RBM=4.46E-10 RC=4.09E-02 RE=1.92E-01 TF=1.34E-09 TR=4.63E-08 VAF=9.12E+01 VAR=2.31E+01 VJC=1.70E-01 VJE=9.55E-01 VTF=7.01E+00 XCJC=7.45E-01 XTB=1.50E+00 XTF=7.03E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

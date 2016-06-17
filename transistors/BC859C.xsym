@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC859C" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC859C</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC859C" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC859C %n
+                                    %model{BC859C PNP(BF=4.63E+02 BR=7.12E+00 CJC=1.15E-11 CJE=8.38E-12 EG=1.11E+00 FC=4.96E-01 IKF=1.17E-01 IKR=9.64E+00 IS=3.37E-13 ISC=1.97E-10 ISE=1.66E-12 ITF=3.09E+00 MJC=3.65E-01 MJE=3.86E-01 NC=1.80E+00 NE=2.42E+00 NKF=5.24E-01 RC=2.78E+00 TF=6.10E-10 TR=9.91E-09 VAF=2.92E+01 VJC=4.99E-01 VJE=5.01E-01 VTF=9.98E+00 XTB=1.50E+00 XTF=4.16E+01 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

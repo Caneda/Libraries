@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="PSS9014C" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">PSS9014C</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="PSS9014C" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} PSS9014C %n
+                                    %model{PSS9014C NPN(BF=3.27E+02 BR=8.34E+00 CJC=3.33E-12 CJE=1.24E-11 EG=1.10E+00 FC=9.80E-01 IKF=1.10E-01 IKR=8.93E-02 IRB=4.99E-06 IS=1.82E-14 ISC=9.99E-12 ISE=2.88E-16 ITF=3.12E-01 MJC=3.91E-01 MJE=3.64E-01 NC=1.76E+00 NE=1.39E+00 NF=9.98E-01 NR=9.94E-01 RB=9.94E+00 RBM=5.04E+00 RC=7.05E-01 RE=6.43E-01 TF=4.88E-10 TR=9.08E-08 VAF=8.13E+01 VAR=1.77E+01 VJC=5.43E-01 VJE=7.62E-01 VTF=2.94E+00 XCJC=6.15E-01 XTB=0.00E+00 XTF=9.53E+00 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="J109" version="0.1.0" label="J">
+    <displaytext>
+        <lang lang="C">J109</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="arrow" line="0,0,11.5,0" pos="-10,0" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="J109" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="J%label %port{d} %port{g} %port{s} J109 %n
+                                    %model{J109 NJF(AF=9.98E-01 BETA=7.62E-03 CGD=4.63E-11 CGS=2.68E-11 FC=5.04E-01 IS=1.77E-15 LAMBDA=1.40E-01 N=1.01E+00 PB=5.82E-01 RD=7.18E-01 RS=7.13E-01 VTO=-5.53E+00)} %n"/>
+    </models>
+</component>

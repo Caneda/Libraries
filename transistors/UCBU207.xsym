@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="UCBU207" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">UCBU207</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="UCBU207" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} UCBU207 %n
+                                    %model{UCBU207 NPN(BF=1.31E+01 BR=9.99E-02 CJC=5.75E-10 CJE=1.99E-12 IKF=2.06E+00 IKR=1.01E+00 IS=1.03E-14 ISC=2.01E-12 ISE=6.93E-14 ITF=1.04E-02 MJC=5.64E-01 MJE=4.97E-01 NE=1.08E+00 NF=8.71E-01 RC=1.78E+00 RE=8.07E-02 TF=3.13E-08 TR=9.96E-09 VAF=1.00E+02 VJC=7.02E-01 VTF=9.92E+00 XTF=5.04E-01)} %n"/>
+    </models>
+</component>

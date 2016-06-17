@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC327-25" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC327-25</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC327-25" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC327-25 %n
+                                    %model{BC327-25 PNP(BF=3.82E+02 BR=2.07E+01 CJC=2.64E-11 CJE=5.14E-11 CJS=0.00E+00 EG=1.10E+00 FC=9.96E-01 IKF=3.62E-01 IKR=5.44E-02 IRB=1.01E-06 IS=1.08E-13 ISC=5.02E-13 ISE=2.71E-14 ITF=4.40E-01 MJC=4.86E-01 MJE=4.40E-01 MJS=3.32E-01 NC=1.30E+00 NE=1.39E+00 NF=9.81E-01 NR=9.91E-01 PTF=0.00E+00 RB=1.01E+00 RBM=5.04E-01 RC=2.61E-01 RE=1.41E-01 TF=7.42E-10 TR=4.98E-08 VAF=3.15E+01 VAR=1.16E+01 VJC=6.23E-01 VJE=8.90E-01 VJS=7.55E-01 VTF=3.81E+00 XCJC=4.57E-01 XTB=0.00E+00 XTF=1.85E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

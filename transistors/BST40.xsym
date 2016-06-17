@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BST40" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BST40</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BST40" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BST40 %n
+                                    %model{BST40 NPN(BF=2.29E+02 BR=5.01E+00 CJC=9.24E-12 CJE=6.81E-11 EG=1.12E+00 FC=4.97E-01 IKF=2.51E-01 IKR=0.00E+00 IS=4.98E-14 ISC=4.95E-12 ISE=9.04E-15 MJC=2.39E-01 MJE=2.39E-01 NC=1.30E+00 NE=1.28E+00 NF=9.93E-01 NR=9.95E-01 RB=7.07E+00 RC=6.96E-02 RE=6.93E-02 TF=1.10E-09 TR=8.95E-07 VAF=6.05E+02 VAR=4.47E+01 VJC=3.93E-01 VJE=6.44E-01 XCJC=7.48E-01 XTB=1.49E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2SK1058" version="0.1.0" label="M">
+    <displaytext>
+        <lang lang="C">2SK1058</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,7.5,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,16" pos="-2.5,-8" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,6" pos="10,0" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2SK1058" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="M%label %port{d} %port{g} %port{s} %port{s} 2SK1058 %n
+                                    %model{2SK1058 NMOS(CBD=2.54E-09 CGDO=1.15E-09 CGSO=1.13E-09 GAMMA=0.00E+00 IS=9.90E-15 KP=2.00E-05 L=2.00E-06 LAMBDA=1.84E-13 PHI=5.99E+08 RD=6.13E+07 TPG=1.00E+00 UO=6.01E+02 VTO=4.07E+08 W=3.00E+07)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BCX68" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BCX68</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BCX68" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BCX68 %n
+                                    %model{BCX68 NPN(BF=1.60E+02 BR=3.68E+00 CJC=1.38E-10 CJE=2.52E-10 EG=1.10E+00 FC=4.97E-01 IKF=7.79E+00 IKR=1.01E+00 IRB=7.01E-02 IS=9.81E-14 ISC=4.12E-14 ISE=1.50E-16 ITF=9.97E+00 MJC=4.85E-01 MJE=4.13E-01 NC=1.02E+00 NE=1.01E+00 NF=9.64E-01 NR=1.24E+00 RB=1.90E+01 RBM=3.01E+00 RC=2.04E-01 RE=1.01E-02 TF=1.38E-09 TR=0.00E+00 VAF=5.65E+02 VAR=3.50E+01 VJC=3.01E-01 VJE=2.99E-01 VTF=9.98E+05 XTB=1.49E+00 XTF=3.26E+01 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

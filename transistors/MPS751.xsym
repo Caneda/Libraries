@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MPS751" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MPS751</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MPS751" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MPS751 %n
+                                    %model{MPS751 PNP(BF=3.11E+02 BR=5.82E+01 CJC=6.12E-11 CJE=3.18E-10 EG=1.11E+00 FC=5.01E-01 IKF=5.97E+00 IKR=5.55E-01 IRB=3.60E-03 IS=3.31E-13 ISC=4.03E-12 ISE=9.14E-15 ITF=3.80E+01 MJC=4.24E-01 MJE=3.32E-01 NC=1.36E+00 NE=1.10E+00 NR=1.01E+00 RB=3.33E+01 RBM=2.09E-02 RC=9.98E-02 RE=1.00E-01 TF=6.16E-10 VAF=3.88E+01 VAR=2.88E+01 VJC=5.12E-01 VJE=6.37E-01 VTF=9.68E+02 XTB=1.49E+00 XTF=8.30E+02 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

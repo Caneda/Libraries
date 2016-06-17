@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC857B" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC857B</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC857B" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC857B %n
+                                    %model{BC857B PNP(BF=3.14E+02 BR=8.70E+00 CJC=6.43E-12 CJE=1.12E-11 CJS=0.00E+00 EG=1.11E+00 FC=9.03E-01 IKF=7.92E-02 IKR=8.93E-02 IRB=4.95E-06 IS=2.01E-14 ISC=1.62E-14 ISE=6.58E-15 ITF=2.11E-01 MJC=4.44E-01 MJE=3.85E-01 MJS=3.34E-01 NC=1.16E+00 NE=1.45E+00 NF=1.01E+00 NR=9.88E-01 PTF=0.00E+00 RB=1.00E+01 RBM=5.00E-06 RC=7.13E-01 RE=6.59E-01 TF=6.59E-10 TR=5.51E-08 VAF=3.93E+01 VAR=9.41E+00 VJC=4.92E-01 VJE=7.09E-01 VJS=7.50E-01 VTF=6.27E+00 XCJC=6.31E-01 XTB=0.00E+00 XTF=5.34E+00 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

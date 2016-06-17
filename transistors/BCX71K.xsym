@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BCX71K" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BCX71K</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BCX71K" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BCX71K %n
+                                    %model{BCX71K PNP(BF=4.61E+02 BR=7.05E+00 CJC=1.15E-11 CJE=8.42E-12 EG=1.11E+00 FC=4.99E-01 IKF=1.25E-01 IKR=4.24E-01 IS=2.64E-14 ISC=8.97E-11 ISE=2.28E-13 ITF=7.64E-01 MJC=3.59E-01 MJE=3.89E-01 NC=2.25E+00 NE=2.13E+00 NKF=4.96E-01 RC=2.59E+00 TF=5.91E-10 TR=1.00E-08 VAF=3.54E+01 VJC=4.99E-01 VJE=5.00E-01 VTF=9.96E-01 XTB=1.50E+00 XTF=2.29E+02 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

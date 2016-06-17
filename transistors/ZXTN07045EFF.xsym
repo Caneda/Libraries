@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="ZXTN07045EFF" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">ZXTN07045EFF</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="ZXTN07045EFF" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} ZXTN07045EFF %n
+                                    %model{ZXTN07045EFF NPN(BF=1.17E+03 BR=1.22E+02 CJC=5.93E-11 CJE=2.49E-10 IKF=3.98E+00 IKR=9.95E-01 IS=1.50E-12 ISC=3.97E-13 ISE=4.04E-13 MJC=3.58E-01 MJE=3.59E-01 NC=1.35E+00 NE=1.37E+00 NF=1.01E+00 NR=1.01E+00 RB=9.97E-02 RC=1.50E-02 RE=2.21E-02 TF=5.98E-10 TR=8.91E-09 TRB1=4.02E-03 TRC1=3.98E-03 TRE1=3.97E-03 VAF=5.95E+01 VAR=1.44E+01 VJC=4.92E-01 VJE=6.86E-01 XTB=1.41E+00)} %n"/>
+    </models>
+</component>

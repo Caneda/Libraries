@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="PN5433" version="0.1.0" label="J">
+    <displaytext>
+        <lang lang="C">PN5433</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="arrow" line="0,0,11.5,0" pos="-10,0" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="PN5433" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="J%label %port{d} %port{g} %port{s} PN5433 %n
+                                    %model{PN5433 NJF(AF=9.94E-01 BETA=1.25E-02 CGD=3.58E-11 CGS=3.57E-11 FC=5.02E-01 IS=5.38E-13 KF=1.68E-16 LAMBDA=3.98E-02 M=4.26E-01 N=1.01E+00 PB=9.98E-01 RD=9.99E-01 RS=1.00E+00 VTO=-4.43E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2N3459" version="0.1.0" label="J">
+    <displaytext>
+        <lang lang="C">2N3459</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="arrow" line="0,0,11.5,0" pos="-10,0" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2N3459" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="J%label %port{d} %port{g} %port{s} 2N3459 %n
+                                    %model{2N3459 NJF(AF=9.94E-01 BETA=1.27E-03 CGD=2.81E-12 CGS=2.92E-12 FC=5.02E-01 IS=1.15E-13 LAMBDA=3.99E-03 N=9.97E-01 PB=5.02E-01 RD=9.92E-01 RS=1.01E+00 VTO=-1.39E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC147" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC147</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC147" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC147 %n
+                                    %model{BC147 NPN(BF=1.70E+03 BR=9.93E-01 CJC=6.05E-12 CJE=1.21E-11 EG=1.10E+00 FC=5.05E-01 IKF=2.73E-02 IKR=0.00E+00 IS=6.67E-14 ISC=0.00E+00 ISE=5.91E-13 ITF=1.14E+02 MJC=3.36E-01 MJE=3.31E-01 NC=2.02E+00 NE=1.52E+00 NKF=8.04E-01 RC=0.00E+00 TF=4.68E-10 TR=4.04E-07 VAF=4.58E+01 VJC=7.57E-01 VJE=7.46E-01 VTF=1.00E+01 XTB=1.49E+00 XTF=1.96E+00 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

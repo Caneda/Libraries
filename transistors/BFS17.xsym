@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFS17" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFS17</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFS17" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFS17 %n
+                                    %model{BFS17 NPN(BF=1.00E+02 BR=3.81E+01 CJC=1.05E-12 CJE=1.32E-12 EG=1.11E+00 FC=8.89E-01 IKF=1.89E-01 IKR=9.27E-02 IRB=9.98E-05 IS=4.79E-16 ISC=1.99E-16 ISE=7.49E-15 ITF=6.98E-01 MJC=2.42E-01 MJE=2.20E-01 NC=1.04E+00 NE=1.78E+00 NF=1.01E+00 NR=1.01E+00 PTF=2.08E+01 RB=1.51E+00 RBM=1.19E+00 RC=2.66E+00 RE=5.04E-01 TF=5.65E-11 TR=2.39E-08 VAF=9.03E+01 VAR=6.95E+00 VJC=6.11E-01 VJE=6.97E-01 VTF=6.05E-01 XCJC=3.97E-01 XTB=1.58E+00 XTF=6.81E+01 XTI=2.99E+00)} %n"/>
+    </models>
+</component>

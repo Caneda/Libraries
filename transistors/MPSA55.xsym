@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MPSA55" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MPSA55</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MPSA55" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MPSA55 %n
+                                    %model{MPSA55 PNP(BF=1.51E+02 BR=5.03E+00 CJC=2.79E-11 CJE=7.39E-11 EG=1.11E+00 FC=7.44E-01 IKF=8.31E-01 IKR=7.57E-02 IRB=2.01E-05 IS=6.52E-14 ISC=6.25E-14 ISE=4.49E-14 ITF=4.83E-01 MJC=5.73E-01 MJE=4.08E-01 NC=1.49E+00 NE=2.23E+00 NF=9.94E-01 NR=9.94E-01 PTF=9.92E-01 RB=3.52E-01 RBM=2.01E-01 RC=3.13E-01 RE=2.77E-01 TF=1.10E-09 TR=2.01E-09 VAF=8.13E+01 VAR=1.08E+01 VJC=9.94E-01 VJE=1.09E+00 VTF=1.98E+00 XCJC=6.51E-01 XTB=1.89E+00 XTF=5.02E+00 XTI=4.32E+00)} %n"/>
+    </models>
+</component>

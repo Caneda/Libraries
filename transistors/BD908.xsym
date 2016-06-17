@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BD908" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BD908</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BD908" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BD908 %n
+                                    %model{BD908 PNP(BF=3.53E+02 BR=4.09E+00 CJC=4.27E-10 CJE=1.40E-08 EG=1.10E+00 FC=5.00E-01 IKF=3.60E-01 IS=9.95E-10 ISC=0.00E+00 ISE=2.12E-08 ITF=3.66E+01 MJC=3.49E-01 MJE=3.28E-01 NC=1.98E+00 NE=1.89E+00 NF=1.00E+00 PTF=0.00E+00 RB=1.28E+00 RC=1.67E-01 RE=2.88E-02 TF=2.75E-08 TR=2.72E-07 VAF=1.01E+02 VAR=4.97E+01 VJC=2.21E-01 VJE=7.49E-01 XTB=0.00E+00 XTF=7.95E-01 XTI=1.50E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BSV17-10" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BSV17-10</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BSV17-10" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BSV17-10 %n
+                                    %model{BSV17-10 PNP(BF=1.19E+02 BR=1.83E+01 CJC=3.62E-11 CJE=2.13E-10 EG=1.12E+00 FC=4.97E-01 IKF=5.29E-01 IKR=1.23E+00 IS=7.01E-14 ISC=7.19E-13 ISE=6.76E-13 ITF=1.46E+01 MJC=3.32E-01 MJE=3.32E-01 NC=1.23E+00 NE=1.57E+00 NKF=5.26E-01 RC=8.37E-01 TF=1.98E-09 TR=3.06E-07 VAF=9.95E+01 VJC=5.00E-01 VJE=4.95E-01 VTF=9.94E+00 XTB=1.50E+00 XTF=8.08E+01 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

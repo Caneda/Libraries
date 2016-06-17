@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="ZTX1048A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">ZTX1048A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="ZTX1048A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} ZTX1048A %n
+                                    %model{ZTX1048A NPN(BF=5.52E+02 BR=3.02E+02 CJC=1.36E-10 CJE=5.64E-10 IKF=7.93E+00 IKR=6.03E+00 IS=1.38E-12 ISC=1.61E-12 ISE=2.59E-13 MJC=2.65E-01 MJE=2.97E-01 NC=1.39E+00 NE=1.37E+00 NF=1.00E+00 NR=9.90E-01 RB=9.91E-02 RC=1.00E-02 RE=2.19E-02 TF=5.98E-10 TR=3.00E-09 VAF=1.21E+02 VAR=1.49E+01 VJC=4.22E-01 VJE=5.35E-01)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT3117A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT3117A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT3117A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT3117A %n
+                                    %model{KT3117A NPN(BF=1.82E+02 BR=1.90E+00 CJC=2.88E-11 CJE=6.83E-11 EG=1.10E+00 FC=5.02E-01 IKF=2.61E+00 IKR=2.65E+00 IS=6.08E-14 ISC=1.20E-09 ISE=9.32E-09 ITF=2.48E+00 MJC=4.67E-01 MJE=1.98E-01 NC=2.01E+00 NE=2.73E+00 RB=3.08E+01 RC=7.50E-01 TF=2.64E-10 TR=3.22E-08 VAF=9.64E+01 VAR=6.51E+01 VJC=7.53E-01 VJE=7.46E-01 VTF=3.99E+01 XTB=1.51E+00 XTF=1.51E+00 XTI=2.99E+00)} %n"/>
+    </models>
+</component>

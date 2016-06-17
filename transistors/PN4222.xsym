@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="PN4222" version="0.1.0" label="J">
+    <displaytext>
+        <lang lang="C">PN4222</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="arrow" line="0,0,11.5,0" pos="-10,0" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="PN4222" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="J%label %port{d} %port{g} %port{s} PN4222 %n
+                                    %model{PN4222 NJF(AF=1.00E+00 BETA=4.34E-04 CGD=4.04E-12 CGS=4.62E-12 FC=5.02E-01 IS=1.83E-13 KF=3.79E-03 LAMBDA=5.32E-03 M=3.09E-01 N=9.98E-01 PB=4.98E-01 RD=9.95E-01 RS=1.00E+00 VTO=-2.88E+00)} %n"/>
+    </models>
+</component>

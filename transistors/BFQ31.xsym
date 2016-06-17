@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFQ31" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFQ31</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFQ31" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFQ31 %n
+                                    %model{BFQ31 NPN(BF=2.01E+02 BR=3.14E+00 CJC=1.20E-12 CJE=2.26E-12 EG=1.10E+00 FC=4.99E-01 IKF=8.80E-03 IKR=1.98E-02 IS=1.72E-13 ISC=8.33E-13 ISE=2.41E-10 MJC=1.46E-01 MJE=1.45E-01 NC=1.12E+00 NE=1.70E+00 NF=1.00E+00 NR=9.76E-01 RB=1.70E+01 RC=3.01E+01 RE=2.14E+00 TF=2.02E-10 TR=1.00E-09 VAF=9.02E+01 VAR=9.79E+00 VJC=4.18E-01 VJE=6.53E-01 XCJC=7.45E-01 XTB=1.50E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BUX48A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BUX48A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BUX48A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BUX48A %n
+                                    %model{BUX48A NPN(BF=3.43E+01 BR=3.88E+00 CJC=6.09E-10 CJE=1.81E-09 EG=1.12E+00 FC=5.02E-01 IKF=9.27E+00 IKR=4.71E+00 IS=3.71E-13 ISC=6.68E-13 ISE=7.16E-12 ITF=1.38E+03 MJC=3.31E-01 MJE=3.36E-01 NC=1.41E+00 NE=1.35E+00 NKF=5.91E-01 RC=3.14E-02 TF=2.67E-08 TR=3.44E-06 VAF=1.00E+02 VJC=4.99E-01 VJE=4.99E-01 VTF=1.01E+01 XTB=1.50E+00 XTF=2.00E+05 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

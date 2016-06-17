@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT208M" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT208M</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT208M" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT208M %n
+                                    %model{KT208M PNP(BF=9.97E+01 BR=3.60E+00 CJC=1.00E-10 CJE=9.29E-11 EG=1.10E+00 FC=4.98E-01 IKF=6.64E-01 IKR=3.04E-01 IS=8.32E-15 ISC=6.41E-14 ISE=3.61E-13 ITF=3.03E-01 MJC=3.87E-01 MJE=5.70E-01 NC=2.01E+00 NE=1.51E+00 RB=1.51E+01 RC=4.00E-01 TF=2.49E-08 TR=7.11E-07 VAF=4.62E+01 VJC=7.56E-01 VJE=7.50E-01 VTF=5.02E+01 XTB=1.51E+00 XTF=1.51E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

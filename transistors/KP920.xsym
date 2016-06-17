@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KP920" version="0.1.0" label="M">
+    <displaytext>
+        <lang lang="C">KP920</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,7.5,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,16" pos="-2.5,-8" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,6" pos="10,0" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KP920" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="M%label %port{d} %port{g} %port{s} %port{s} KP920 %n
+                                    %model{KP920 NMOS(CGDO=6.21E-10 CGSO=6.19E-10 L=1.99E-06 LAMBDA=5.02E+07 RD=5.98E+08 RS=2.31E+08 VTO=6.07E+00 W=7.65E+07)} %n"/>
+    </models>
+</component>

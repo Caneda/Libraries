@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFT45" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFT45</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFT45" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFT45 %n
+                                    %model{BFT45 PNP(BF=1.31E+02 BR=1.00E+00 CJC=4.40E-11 CJE=1.34E-10 EG=1.10E+00 FC=5.00E-01 IKF=8.54E-01 IKR=4.73E+00 IS=7.40E-09 ISC=2.14E-06 ISE=7.30E-09 ITF=9.11E+00 MJC=3.34E-01 MJE=3.36E-01 NC=2.22E+00 NE=1.58E+00 NKF=7.21E-01 RC=3.28E+00 TF=1.59E-09 TR=1.00E-08 VAF=9.98E+01 VJC=5.03E-01 VJE=5.04E-01 VTF=9.99E+00 XTB=1.50E+00 XTF=2.23E+02 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

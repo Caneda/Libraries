@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT8101" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT8101</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT8101" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT8101 %n
+                                    %model{KT8101 NPN(BF=1.27E+03 BR=2.56E-01 CJC=5.03E-12 CJE=5.02E-12 IKF=5.37E+00 IKR=6.09E-02 IS=2.95E-11 ISC=3.40E-06 ISE=3.01E-12 ITF=3.82E-02 MJC=4.95E-01 MJE=4.97E-01 NE=1.16E+00 NF=1.01E+00 RC=1.04E-02 RE=6.51E-02 TF=8.56E-09 TR=1.00E-08 VAF=9.05E+01 VTF=9.92E+00 XTF=5.04E-01)} %n"/>
+    </models>
+</component>

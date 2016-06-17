@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2N6032" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2N6032</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2N6032" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2N6032 %n
+                                    %model{2N6032 NPN(BF=1.12E+02 BR=1.01E+01 CJC=1.93E-09 CJE=1.01E-08 EG=1.11E+00 FC=4.98E-01 IKF=3.68E+01 IKR=5.02E+01 IS=2.75E-12 ISC=1.00E-14 ISE=2.79E-12 ITF=1.01E+00 MJC=3.64E-01 MJE=3.33E-01 NC=5.05E+00 NE=1.32E+00 NKF=7.43E-01 RC=1.10E-02 TF=3.96E-08 TR=3.60E-07 VAF=1.00E+02 VAR=9.92E+01 VJC=3.88E-01 VJE=7.43E-01 VTF=9.96E+00 XTB=1.49E+00 XTF=0.00E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

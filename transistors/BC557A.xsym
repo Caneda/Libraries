@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC557A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC557A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC557A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC557A %n
+                                    %model{BC557A PNP(BF=2.27E+02 BR=7.66E+00 CJC=1.11E-11 CJE=1.40E-11 EG=1.11E+00 FC=7.94E-01 IKF=8.69E-02 IKR=7.59E-02 IRB=9.97E-07 IS=2.07E-14 ISC=1.34E-14 ISE=2.98E-15 ITF=1.94E-01 MJC=3.43E-01 MJE=3.57E-01 NC=1.14E+00 NE=1.32E+00 NF=1.01E+00 NR=1.00E+00 RB=9.96E-01 RBM=9.99E-01 RC=6.41E-01 RE=6.91E-01 TF=7.11E-10 TR=1.00E-32 VAF=3.73E+01 VAR=1.15E+01 VJC=1.01E-01 VJE=5.94E-01 VTF=5.39E+00 XCJC=6.34E-01 XTB=1.49E+00 XTF=4.20E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

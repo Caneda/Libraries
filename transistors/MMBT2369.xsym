@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MMBT2369" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MMBT2369</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MMBT2369" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MMBT2369 %n
+                                    %model{MMBT2369 NPN(BF=5.26E+02 BR=2.61E+00 CJC=3.10E-12 CJE=3.29E-12 EG=1.06E+00 FC=5.38E-01 IKF=8.78E-03 IKR=8.82E-02 IS=1.45E-13 ISC=1.00E-08 ISE=9.93E-09 ITF=9.94E-01 MJC=5.62E-02 MJE=2.28E-01 NC=2.30E+00 NE=3.70E+00 NF=1.22E+00 NR=1.22E+00 RC=1.23E+00 RE=1.00E-04 TF=3.98E-10 TR=6.13E-09 VAF=3.65E+00 VAR=7.23E+00 VJC=1.20E-01 VJE=3.30E-01 VTF=9.99E-01 XCJC=7.94E-01 XTB=9.94E-13 XTF=1.51E+00 XTI=1.00E-12)} %n"/>
+    </models>
+</component>

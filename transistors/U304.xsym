@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="U304" version="0.1.0" label="J">
+    <displaytext>
+        <lang lang="C">U304</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="arrow" line="0,0,-11.5,0" pos="1.5,0" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="U304" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="J%label %port{d} %port{g} %port{s} U304 %n
+                                    %model{U304 PJF(AF=9.97E-01 BETA=1.49E-03 CGD=1.61E-11 CGS=1.67E-11 FC=4.97E-01 IS=4.64E-13 KF=1.46E-16 LAMBDA=3.00E-03 M=4.12E-01 N=9.92E-01 PB=9.94E-01 RD=1.01E+00 RS=9.99E-01 VTO=-5.77E+00)} %n"/>
+    </models>
+</component>

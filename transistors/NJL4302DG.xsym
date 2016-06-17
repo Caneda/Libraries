@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="NJL4302DG" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">NJL4302DG</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="NJL4302DG" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} NJL4302DG %n
+                                    %model{NJL4302DG PNP(BF=1.08E+02 BR=1.01E-01 CJC=5.01E-10 CJE=1.56E-08 EG=1.22E+00 FC=7.92E-01 IKF=1.19E+00 IKR=1.01E-05 IRB=9.99E-02 IS=3.27E-14 ISC=2.04E-13 ISE=2.92E-13 ITF=2.46E+02 MJC=2.32E-01 MJE=5.45E-01 NC=3.26E+00 NE=1.20E+00 NF=8.44E-01 NR=1.09E+00 RB=8.83E-01 RBM=8.83E-01 RC=2.20E-02 RE=4.40E-03 TF=1.85E-09 TR=9.95E-08 VAF=1.00E+01 VAR=9.84E+01 VJC=9.43E-01 VJE=9.92E-01 VTF=9.90E+04 XTB=5.63E+00 XTF=9.97E+02 XTI=4.03E+00)} %n"/>
+    </models>
+</component>

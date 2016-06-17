@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT3107A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT3107A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT3107A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT3107A %n
+                                    %model{KT3107A PNP(BF=1.05E+02 BR=1.63E+00 CJC=1.28E-11 CJE=1.27E-11 EG=1.11E+00 FC=5.03E-01 IKF=1.85E-01 IKR=1.20E-02 IS=6.53E-15 ISC=3.33E-12 ISE=7.70E-09 ITF=5.56E-02 MJC=3.28E-01 MJE=3.52E-01 NC=2.02E+00 NE=8.54E+00 RB=3.88E+01 RC=7.14E-01 TF=4.76E-10 TR=3.07E-08 VAF=8.67E+01 VAR=3.21E+01 VJC=6.46E-01 VJE=6.90E-01 VTF=3.47E+01 XTB=1.50E+00 XTF=2.02E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

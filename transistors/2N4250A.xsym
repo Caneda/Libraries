@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2N4250A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2N4250A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2N4250A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2N4250A %n
+                                    %model{2N4250A PNP(BF=3.88E+02 BR=2.66E+00 CJC=6.22E-12 CJE=7.44E-12 EG=1.11E+00 FC=5.00E-01 IKF=2.05E-01 IKR=0.00E+00 IS=6.71E-15 ISC=0.00E+00 ISE=6.74E-15 ITF=1.71E-01 MJC=3.01E-01 MJE=2.85E-01 NC=2.01E+00 NE=1.81E+00 NF=9.96E-01 NR=1.01E+00 RB=1.01E+01 RC=1.66E+00 RE=1.69E-01 TF=4.71E-10 TR=9.81E-09 VAF=4.54E+01 VAR=1.49E+01 VJC=6.47E-01 VJE=6.44E-01 VTF=4.98E+00 XCJC=7.56E-01 XTB=1.51E+00 XTF=8.02E+00 XTI=2.97E+00)} %n"/>
+    </models>
+</component>

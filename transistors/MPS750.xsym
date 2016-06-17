@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MPS750" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MPS750</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MPS750" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MPS750 %n
+                                    %model{MPS750 PNP(BF=1.31E+02 BR=3.96E+00 CJC=1.53E-10 CJE=4.74E-10 IKF=1.21E+00 IKR=1.81E+00 IS=2.02E-13 ISE=2.00E-10 MJC=3.02E-01 MJE=5.01E-01 NE=2.02E+00 NF=9.99E-01 NR=1.01E+00 RB=1.03E-01 RC=1.02E-02 RE=2.60E-02 TF=1.58E-09 TR=1.10E-06 VAF=1.13E+02 VAR=1.98E+01 VJC=3.02E-01 VJE=1.09E+00 XTB=1.51E+00)} %n"/>
+    </models>
+</component>

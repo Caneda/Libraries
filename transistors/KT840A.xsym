@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT840A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT840A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT840A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT840A %n
+                                    %model{KT840A NPN(BF=1.10E+02 BR=5.00E+02 CJC=7.05E-10 CJE=3.31E-09 IKF=2.56E+00 IKR=2.01E+01 IS=1.12E-12 ISC=3.38E-10 ISE=8.12E-11 ITF=1.00E+00 MJC=4.22E-01 MJE=2.10E-01 NC=3.00E+00 NE=1.50E+00 NKF=6.63E-01 RB=4.80E-02 RC=1.14E-01 TF=2.68E-09 TR=1.64E-07 VAF=1.00E+02 VAR=9.92E+01 VJC=3.50E-01 VTF=9.99E+00 XTF=9.92E+00)} %n"/>
+    </models>
+</component>

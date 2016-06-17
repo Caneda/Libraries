@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFP194" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFP194</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFP194" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFP194 %n
+                                    %model{BFP194 PNP(BF=1.11E+02 BR=9.29E+01 CJC=3.59E-12 CJE=1.76E-14 EG=1.12E+00 FC=9.02E-01 IKF=8.43E-01 IKR=1.27E-02 IRB=6.17E-05 IS=4.60E-15 ISC=7.86E-18 ISE=2.16E-14 ITF=1.04E-02 MJC=4.03E-01 MJE=4.79E-01 NC=1.59E+00 NE=8.44E-01 NF=6.61E-01 NR=4.40E-01 RB=4.12E+00 RBM=7.46E-01 RC=1.09E-01 RE=1.60E-01 TF=5.26E-11 TR=9.75E-10 VAF=9.15E+00 VAR=1.79E+00 VJC=7.21E-01 VJE=8.54E-01 VTF=1.03E-01 XCJC=6.34E-02 XTB=1.50E+00 XTF=6.60E-01 XTI=2.97E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BC307A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BC307A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BC307A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BC307A %n
+                                    %model{BC307A PNP(BF=3.31E+02 BR=1.30E+01 CJC=1.05E-11 CJE=1.59E-11 EG=1.12E+00 FC=5.00E-01 IKF=1.01E-01 IKR=1.20E-02 IS=1.15E-14 ISC=1.42E-14 ISE=5.00E-14 MJC=4.17E-01 MJE=4.13E-01 NC=1.10E+00 NE=1.40E+00 NF=9.94E-01 NR=9.90E-01 RB=1.98E-01 RC=9.48E-01 RE=3.96E-01 TF=4.96E-10 TR=7.28E-08 VAF=8.39E+01 VAR=8.21E+00 VJC=5.63E-01 VJE=6.47E-01 XCJC=7.51E-01 XTB=1.51E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

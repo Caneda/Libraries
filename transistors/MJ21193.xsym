@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MJ21193" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MJ21193</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MJ21193" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MJ21193 %n
+                                    %model{MJ21193 PNP(BF=2.86E+02 BR=4.32E-03 CJC=2.19E-09 CJE=6.13E-08 EG=1.05E+00 FC=9.93E-22 IKF=3.12E+00 IKR=1.01E+01 IRB=1.01E-12 IS=2.13E-10 ISC=2.56E-13 ISE=1.65E-08 ITF=4.62E+00 MJC=3.45E-01 MJE=3.90E-01 NC=3.97E+00 NE=2.07E+00 NF=1.10E+00 NR=1.80E+00 RB=2.83E+00 RBM=1.05E+00 RC=4.76E-02 RE=9.52E-03 TF=1.90E-08 TR=1.00E-07 VAF=9.91E+02 VAR=1.73E+00 VJC=9.94E-02 VJE=9.92E-01 VTF=1.30E+01 XCJC=7.50E-01 XTB=9.96E-02 XTF=1.23E+00 XTI=9.94E-03)} %n"/>
+    </models>
+</component>

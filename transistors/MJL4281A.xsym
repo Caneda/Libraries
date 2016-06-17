@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MJL4281A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MJL4281A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MJL4281A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MJL4281A %n
+                                    %model{MJL4281A NPN(BF=1.93E+02 BR=4.39E+00 CJC=8.86E-10 CJE=9.12E-09 EG=1.05E+00 FC=8.00E-01 IKF=5.71E+00 IKR=6.64E+00 IRB=9.76E-03 IS=9.87E-11 ISC=3.87E-13 ISE=6.41E-12 ITF=1.53E+02 MJC=2.31E-01 MJE=8.44E-01 NC=3.98E+00 NE=3.43E+00 NF=1.11E+00 NR=1.19E+00 RB=4.34E+00 RBM=1.01E-15 RC=4.33E-02 RE=6.10E-03 TF=1.66E-09 TR=1.00E-07 VAF=2.48E+01 VAR=4.22E+00 VJC=9.45E-01 VJE=9.84E-01 VTF=1.72E+04 XTB=6.59E-01 XTF=9.98E+02 XTI=1.01E+00)} %n"/>
+    </models>
+</component>

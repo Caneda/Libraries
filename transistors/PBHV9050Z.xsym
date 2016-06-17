@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="PBHV9050Z" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">PBHV9050Z</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="PBHV9050Z" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} PBHV9050Z %n
+                                    %model{PBHV9050Z PNP(BF=1.58E+02 BR=1.09E+01 CJC=3.44E-11 CJE=2.00E-10 EG=1.11E+00 FC=6.06E-01 IKF=6.98E-03 IKR=4.99E-01 IRB=2.33E-04 IS=8.20E-14 ISC=1.32E-12 ISE=4.01E-14 ITF=1.51E+00 MJC=4.55E-01 MJE=3.79E-01 NC=1.14E+00 NE=1.40E+00 NF=9.69E-01 NR=9.63E-01 RB=1.22E+01 RBM=1.46E+00 RC=3.38E-01 RE=1.38E-01 TF=1.09E-09 TR=8.00E-07 VAF=8.08E+00 VAR=8.09E+01 VJC=4.97E-01 VJE=7.45E-01 VTF=2.00E+01 XTB=0.00E+00 XTF=3.02E+01 XTI=2.99E+00)} %n"/>
+    </models>
+</component>

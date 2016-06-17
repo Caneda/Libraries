@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT819B" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT819B</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT819B" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT819B %n
+                                    %model{KT819B NPN(BF=1.62E+02 BR=3.82E+00 CJC=1.17E-09 CJE=1.65E-09 EG=1.11E+00 FC=4.98E-01 IKF=4.22E+00 IKR=1.09E+00 IS=1.15E-13 ISC=1.26E-12 ISE=1.42E-12 ITF=1.39E+00 MJC=3.35E-01 MJE=3.30E-01 NC=1.50E+00 NE=1.35E+00 NKF=6.51E-01 RB=1.98E+00 RC=5.94E-02 TF=1.47E-08 TR=1.39E-06 VAF=8.92E+01 VJC=7.53E-01 VJE=7.48E-01 VTF=1.00E+01 XTB=1.50E+00 XTF=4.26E-01 XTI=2.99E+00)} %n"/>
+    </models>
+</component>

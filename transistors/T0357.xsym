@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="T0357" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">T0357</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="T0357" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} T0357 %n
+                                    %model{T0357 NPN(BF=5.12E+02 BR=7.79E+00 CJC=4.11E-12 CJE=1.30E-11 EG=1.10E+00 FC=7.48E-01 IKF=7.05E-01 IKR=9.99E-01 IRB=1.01E-04 IS=4.52E-14 ISC=1.09E-12 ISE=5.58E-14 ITF=7.22E-01 MJC=4.23E-01 MJE=3.72E-01 NC=4.03E+00 NE=2.59E+00 NF=1.00E+00 NR=1.02E+00 PTF=9.94E-01 RB=8.96E+00 RBM=4.53E+00 RC=1.43E+00 RE=3.47E-01 TF=6.19E-10 TR=2.49E-09 VAF=7.37E+01 VAR=1.40E+01 VJC=7.45E-01 VJE=6.91E-01 VTF=1.01E+00 XCJC=6.46E-01 XTB=1.39E+00 XTF=6.79E+01 XTI=3.18E+00)} %n"/>
+    </models>
+</component>

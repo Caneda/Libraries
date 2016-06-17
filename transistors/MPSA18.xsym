@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MPSA18" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MPSA18</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MPSA18" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MPSA18 %n
+                                    %model{MPSA18 NPN(BF=2.38E+02 BR=5.82E+00 CJC=4.92E-12 CJE=7.48E-12 EG=1.12E+00 FC=5.05E-01 IKF=1.18E-01 IKR=0.00E+00 IS=3.37E-14 ISC=0.00E+00 ISE=1.65E-13 ITF=6.06E-01 MJC=4.09E-01 MJE=3.78E-01 NC=2.00E+00 NE=1.58E+00 NF=9.99E-01 NR=1.00E+00 RB=9.97E+00 RC=9.95E-01 RE=9.92E-02 TF=3.12E-10 TR=8.02E-10 VAF=9.93E+01 VAR=2.97E+01 VJC=6.52E-01 VJE=6.51E-01 VTF=6.04E+00 XCJC=7.55E-01 XTB=1.50E+00 XTF=3.53E+01 XTI=3.01E+00)} %n"/>
+    </models>
+</component>

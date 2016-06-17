@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="SS9014" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">SS9014</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="SS9014" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} SS9014 %n
+                                    %model{SS9014 NPN(BF=3.78E+02 BR=4.76E+00 CJC=6.33E-12 CJE=1.73E-11 EG=1.24E+00 FC=4.97E-01 IKF=1.18E+00 IKR=2.73E-01 IRB=9.97E-06 IS=2.88E-14 ISC=1.45E-14 ISE=4.79E-15 MJC=2.56E-01 MJE=3.20E-01 NC=1.50E+00 NE=1.50E+00 RB=1.99E+02 RBM=9.96E+00 RC=4.99E+00 RE=5.62E-01 TF=5.87E-10 VAF=1.22E+02 VAR=1.14E+01 VJC=4.15E-01 VJE=6.96E-01 XCJC=4.51E-01 XTB=1.88E+00 XTI=3.03E+00)} %n"/>
+    </models>
+</component>

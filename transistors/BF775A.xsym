@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BF775A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BF775A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BF775A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BF775A %n
+                                    %model{BF775A NPN(BF=3.10E+02 BR=1.01E+00 CJC=9.97E-15 CJE=2.50E-12 EG=1.10E+00 FC=5.02E-01 IKF=1.99E-02 IKR=5.01E-01 IRB=2.51E-01 IS=2.20E-16 ISC=9.98E-18 ISE=2.11E-15 ITF=0.00E+00 MJC=3.31E-01 MJE=3.32E-01 NC=2.00E+00 NE=2.61E+00 NF=9.74E-01 NR=1.01E+00 RB=2.60E+01 RBM=2.22E+00 RC=3.20E+00 RE=9.09E-01 TF=0.00E+00 TR=0.00E+00 VAF=3.57E+01 VAR=6.04E+01 VJC=7.57E-01 VJE=8.45E-01 VTF=9.98E+29 XCJC=3.01E-01 XTB=1.49E+00 XTF=0.00E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

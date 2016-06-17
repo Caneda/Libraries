@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BCX70H" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BCX70H</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BCX70H" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BCX70H %n
+                                    %model{BCX70H NPN(BF=2.42E+02 BR=8.95E+00 CJC=1.14E-11 CJE=8.45E-12 EG=1.12E+00 FC=5.00E-01 IKF=1.79E+00 IKR=7.04E+00 IS=2.62E-14 ISC=1.34E-11 ISE=2.77E-13 ITF=2.53E+00 MJC=3.60E-01 MJE=3.87E-01 NC=1.85E+00 NE=1.86E+00 NKF=4.98E-01 RC=3.03E+00 TF=5.96E-10 TR=1.01E-08 VAF=7.86E+01 VJC=5.00E-01 VJE=4.99E-01 VTF=9.90E+00 XTB=1.49E+00 XTF=2.35E+02 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

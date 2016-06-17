@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BST15" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BST15</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BST15" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BST15 %n
+                                    %model{BST15 PNP(BF=1.06E+02 BR=3.97E+00 CJC=1.71E-11 CJE=8.08E-11 EG=1.11E+00 FC=5.01E-01 IKF=7.97E-01 IKR=5.45E-02 IS=4.00E-14 ISC=8.01E-12 ISE=8.03E-15 MJC=3.79E-01 MJE=3.82E-01 NC=1.30E+00 NE=1.39E+00 NF=1.02E+00 NR=9.94E-01 RB=9.06E+00 RC=9.94E-02 RE=1.00E-01 TF=6.95E-10 TR=1.60E-06 VAF=3.02E+02 VAR=4.04E+01 VJC=5.39E-01 VJE=6.55E-01 XCJC=7.54E-01 XTB=1.50E+00 XTI=3.01E+00)} %n"/>
+    </models>
+</component>

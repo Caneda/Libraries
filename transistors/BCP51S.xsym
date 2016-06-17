@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BCP51S" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BCP51S</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BCP51S" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BCP51S %n
+                                    %model{BCP51S PNP(BF=1.86E+02 BR=4.25E+00 CJC=8.04E-11 CJE=1.26E-10 EG=1.11E+00 FC=4.96E-01 IKF=9.60E-01 IKR=9.96E-01 IRB=1.63E-01 IS=4.63E-12 ISC=9.38E-17 ISE=1.98E-14 ITF=4.54E-01 MJC=5.04E-01 MJE=4.96E-01 NC=1.98E+00 NE=1.22E+00 NF=1.19E+00 NR=1.23E+00 RB=4.86E+00 RBM=1.01E+01 RC=2.62E-01 RE=9.91E-03 TF=1.07E-09 TR=0.00E+00 VAF=1.44E+02 VAR=1.98E+01 VJC=3.60E-01 VJE=5.43E-01 VTF=9.95E+05 XTB=1.49E+00 XTF=6.30E-01 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

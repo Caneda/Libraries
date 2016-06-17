@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="ZXT13P20DE6" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">ZXT13P20DE6</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="ZXT13P20DE6" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} ZXT13P20DE6 %n
+                                    %model{ZXT13P20DE6 PNP(BF=4.47E+02 BR=2.10E+02 CJC=2.36E-10 CJE=6.80E-10 IKF=6.03E+00 IS=1.31E-12 ISC=3.99E-14 ISE=8.04E-14 MJC=3.78E-01 MJE=5.19E-01 NC=1.19E+00 NE=1.41E+00 NF=1.01E+00 NR=1.01E+00 RB=1.00E+00 RC=7.07E-02 RE=7.43E-03 TF=1.10E-09 TR=3.59E-09 VAF=1.49E+01 VAR=4.97E+00 VJC=5.09E-01 VJE=9.48E-01 XTB=1.49E+00)} %n"/>
+    </models>
+</component>

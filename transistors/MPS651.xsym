@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="MPS651" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">MPS651</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="MPS651" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} MPS651 %n
+                                    %model{MPS651 NPN(BF=2.59E+02 BR=4.03E+00 CJC=6.79E-11 CJE=2.13E-10 IKF=2.49E+00 IKR=3.75E+00 IS=7.26E-14 ISE=6.71E-11 MJC=2.98E-01 MJE=4.96E-01 NE=1.98E+00 NF=1.01E+00 NR=9.93E-01 RB=1.13E-01 RC=1.14E-02 RE=2.82E-02 TF=1.45E-09 TR=1.00E-06 VAF=1.38E+02 VAR=2.00E+01 VJC=3.01E-01 VJE=1.10E+00 XTB=1.49E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2SB1375" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2SB1375</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2SB1375" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2SB1375 %n
+                                    %model{2SB1375 PNP(BF=3.35E+02 BR=2.00E+01 CJC=1.20E-10 CJE=9.97E-14 EG=1.10E+00 FC=4.96E-01 IKF=3.48E-01 IKR=1.00E+00 IRB=1.39E-03 IS=1.00E-10 ISC=9.98E-14 ISE=2.34E-11 ITF=0.00E+00 MJC=3.28E-01 MJE=3.30E-01 NC=2.02E+00 NE=1.52E+00 NF=1.12E+00 NR=1.11E+00 RB=5.00E+01 RBM=1.20E-02 RC=2.59E-01 RE=1.82E-03 TF=1.76E-08 VAF=3.20E+01 VAR=5.00E+01 VJC=7.48E-01 VJE=7.49E-01 VTF=9.90E+05 XTB=1.17E+00 XTF=1.00E+00 XTI=2.51E+00)} %n"/>
+    </models>
+</component>

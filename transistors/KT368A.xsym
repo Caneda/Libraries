@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT368A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT368A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT368A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT368A %n
+                                    %model{KT368A NPN(BF=2.52E+02 BR=1.44E+00 CJC=2.34E-12 CJE=2.80E-12 EG=1.11E+00 FC=5.00E-01 IKF=3.60E-01 IKR=1.25E-01 IS=8.75E-15 ISC=1.63E-14 ISE=9.05E-15 ITF=1.50E-01 MJC=3.28E-01 MJE=3.69E-01 NC=2.01E+00 NE=1.38E+00 RB=5.95E+01 RC=2.46E+00 TF=8.43E-11 TR=2.13E-09 VAF=1.09E+02 VAR=5.55E+01 VJC=7.50E-01 VJE=6.94E-01 VTF=2.48E+01 XCJC=9.97E-02 XTB=1.50E+00 XTF=2.00E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

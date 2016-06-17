@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="SMBT3904" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">SMBT3904</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="SMBT3904" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} SMBT3904 %n
+                                    %model{SMBT3904 NPN(BF=5.91E+02 BR=9.98E-01 CJC=6.84E-12 CJE=6.58E-12 EG=1.10E+00 FC=5.05E-01 IKF=2.06E-02 IKR=1.06E+01 IS=9.74E-15 ISC=9.90E-11 ISE=1.72E-13 ITF=2.39E+02 MJC=3.31E-01 MJE=3.35E-01 NC=1.68E+00 NE=1.42E+00 NKF=5.68E-01 RC=1.96E+00 TF=2.97E-10 TR=3.87E-07 VAF=1.92E+02 VJC=5.04E-01 VJE=5.04E-01 VTF=9.99E+00 XTB=1.49E+00 XTF=4.97E+05 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

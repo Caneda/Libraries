@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFG198" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFG198</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFG198" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFG198 %n
+                                    %model{BFG198 NPN(BF=1.33E+02 BR=1.15E+01 CJC=2.33E-12 CJE=5.12E-15 EG=1.12E+00 FC=9.37E-01 IKF=4.40E-01 IKR=1.01E-02 IRB=2.84E-05 IS=1.91E-15 ISC=2.11E-15 ISE=7.18E-14 ITF=6.23E-02 MJC=4.66E-01 MJE=6.84E-01 NC=1.46E+00 NE=1.33E+00 NF=8.97E-01 NR=9.12E-01 RB=1.27E+00 RBM=1.09E+00 RC=2.75E-01 RE=1.13E+00 TF=3.55E-11 TR=1.26E-09 VAF=1.50E+01 VAR=4.20E+00 VJC=8.09E-01 VJE=8.64E-01 VTF=1.06E-01 XCJC=1.45E-01 XTB=1.49E+00 XTF=4.48E-01 XTI=3.02E+00)} %n"/>
+    </models>
+</component>

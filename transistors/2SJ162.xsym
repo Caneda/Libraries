@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2SJ162" version="0.1.0" label="M">
+    <displaytext>
+        <lang lang="C">2SJ162</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,2.5,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,16" pos="-2.5,-8" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-6" pos="10,0" transform="1,0,0,1,0,0"/>
+
+        <painting name="ellipse" ellipse="0,0,5,5" pos="-7.5,-2.5" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,10"/>
+        <port name="s" pos="10,-10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2SJ162" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="M%label %port{d} %port{g} %port{s} %port{s} 2SJ162 %n
+                                    %model{2SJ162 PMOS(CBD=2.98E-09 CGDO=1.13E-09 CGSO=1.14E-09 GAMMA=0.00E+00 IS=9.97E-15 KP=1.99E-05 L=2.01E-06 LAMBDA=2.09E+07 PHI=5.99E+08 RD=8.30E+08 TPG=1.00E+00 UO=5.96E+02 VTO=-8.47E+08 W=2.12E+07)} %n"/>
+    </models>
+</component>

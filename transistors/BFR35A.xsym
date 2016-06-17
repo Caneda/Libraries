@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFR35A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFR35A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFR35A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFR35A %n
+                                    %model{BFR35A NPN(BF=9.39E+01 BR=1.07E+01 CJC=9.43E-13 CJE=1.05E-14 EG=1.11E+00 FC=9.88E-01 IKF=4.64E-01 IKR=9.95E-03 IRB=1.64E-05 IS=1.21E-16 ISC=7.63E-16 ISE=1.29E-13 ITF=4.47E-03 MJC=4.08E-01 MJE=3.46E-01 NC=1.38E+00 NE=1.91E+00 NF=1.09E+00 NR=8.96E-01 RB=1.48E+01 RBM=7.80E+00 RC=1.38E-01 RE=2.89E-01 TF=2.65E-11 TR=1.28E-09 VAF=3.01E+01 VAR=1.47E+01 VJC=8.43E-01 VJE=7.00E-01 VTF=3.29E-01 XCJC=1.34E-01 XTB=1.51E+00 XTF=3.81E-01 XTI=3.01E+00)} %n"/>
+    </models>
+</component>

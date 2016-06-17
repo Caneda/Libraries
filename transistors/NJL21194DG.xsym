@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="NJL21194DG" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">NJL21194DG</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="NJL21194DG" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} NJL21194DG %n
+                                    %model{NJL21194DG NPN(BF=6.29E+01 BR=4.99E+00 CJC=5.04E-10 CJE=1.71E-08 EG=1.13E+00 FC=7.96E-01 IKF=9.82E+00 IKR=4.85E+00 IRB=9.96E-02 IS=9.55E-11 ISC=3.22E-13 ISE=7.04E-12 ITF=5.58E-01 MJC=2.39E-01 MJE=5.20E-01 NC=4.02E+00 NE=3.42E+00 NF=8.57E-01 NR=9.31E-01 RB=1.11E+01 RBM=1.01E-01 RC=1.25E-01 RE=6.72E-04 TF=1.00E-08 TR=1.01E-07 VAF=2.99E+01 VAR=6.22E+00 VJC=9.45E-01 VJE=4.02E-01 VTF=1.87E+00 XCJC=8.06E-01 XTB=1.50E-01 XTF=4.71E+01 XTI=1.00E+00)} %n"/>
+    </models>
+</component>

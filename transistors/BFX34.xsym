@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFX34" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFX34</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFX34" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFX34 %n
+                                    %model{BFX34 NPN(BF=3.62E+02 BR=1.24E+00 CJC=8.77E-11 CJE=5.18E-10 EG=1.11E+00 FC=4.99E-01 IKF=1.95E+00 IKR=9.84E-01 IS=3.29E-12 ISC=6.28E-11 ISE=4.61E-10 ITF=1.72E+01 MJC=3.31E-01 MJE=3.36E-01 NC=1.48E+00 NE=1.76E+00 NKF=5.09E-01 RC=1.31E-01 TF=1.49E-09 TR=1.00E-08 VAF=9.96E+01 VJC=5.04E-01 VJE=4.97E-01 VTF=9.92E+00 XTB=1.50E+00 XTF=1.39E+01 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

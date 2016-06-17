@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT312V" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT312V</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT312V" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT312V %n
+                                    %model{KT312V NPN(BF=2.83E+02 BR=8.16E-01 CJC=3.13E-12 CJE=4.51E-12 EG=1.10E+00 FC=4.96E-01 IKF=3.01E-02 IS=6.71E-15 ISE=6.70E-15 ITF=4.02E-01 MJC=3.02E-01 MJE=2.61E-01 NE=1.20E+00 RB=2.01E+02 RC=9.90E-01 TF=3.00E-10 TR=2.43E-07 VAF=5.96E+01 VJC=7.46E-01 VJE=7.49E-01 VTF=5.01E+00 XTB=1.49E+00 XTF=2.02E+00 XTI=2.97E+00)} %n"/>
+    </models>
+</component>

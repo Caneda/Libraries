@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BSS138" version="0.1.0" label="M">
+    <displaytext>
+        <lang lang="C">BSS138</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,7.5,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,16" pos="-2.5,-8" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,6" pos="10,0" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BSS138" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="M%label %port{d} %port{g} %port{s} %port{s} BSS138 %n
+                                    %model{BSS138 NMOS(CBD=1.85E-11 CBS=2.19E-11 CGBO=2.47E-07 CGDO=2.39E-08 CGSO=2.88E-08 GAMMA=1.49E+00 IS=1.00E-13 KP=7.44E+06 L=1.01E-04 LAMBDA=1.24E+06 LEVEL=1.01E+00 MJ=4.57E-01 PB=8.05E-01 PHI=7.47E-01 RD=1.98E-01 RS=1.94E-01 VTO=1.19E+00 W=9.91E-05)} %n"/>
+    </models>
+</component>

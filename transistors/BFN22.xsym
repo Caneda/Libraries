@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFN22" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFN22</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFN22" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFN22 %n
+                                    %model{BFN22 NPN(BF=1.23E+02 BR=5.59E+00 CJC=5.44E-12 CJE=4.17E-11 EG=1.11E+00 FC=4.96E-01 IKF=4.11E-02 IKR=9.95E-01 IRB=2.40E-02 IS=6.40E-16 ISC=2.88E-14 ISE=2.81E-17 ITF=2.63E+00 MJC=5.22E-01 MJE=3.93E-01 NC=1.03E+00 NE=1.00E+00 NF=9.08E-01 NR=1.86E+00 RB=4.62E+01 RBM=2.17E+01 RC=4.11E-01 RE=4.45E-01 TF=1.12E-09 TR=0.00E+00 VAF=4.12E+02 VAR=4.30E+02 VJC=2.99E-01 VJE=3.01E-01 VTF=8.74E+05 XTB=1.51E+00 XTF=6.05E+02 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2T3108A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2T3108A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2T3108A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2T3108A %n
+                                    %model{2T3108A PNP(BF=1.13E+02 BR=1.89E+00 CJC=4.35E-12 CJE=3.69E-12 EG=1.12E+00 FC=5.03E-01 IKF=3.17E-02 IKR=3.09E-02 IS=1.42E-15 ISC=1.14E-13 ISE=1.15E-10 ITF=5.60E-02 MJC=3.29E-01 MJE=3.31E-01 NC=1.99E+00 NE=3.36E+00 RB=5.21E+01 RC=4.23E+00 TF=3.41E-10 TR=6.79E-08 VAF=8.64E+01 VJC=7.52E-01 VJE=7.57E-01 VTF=4.48E+01 XTB=1.49E+00 XTF=1.50E+00 XTI=2.98E+00)} %n"/>
+    </models>
+</component>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="LND150" version="0.1.0" label="M">
+    <displaytext>
+        <lang lang="C">LND150</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,7.5,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,16" pos="-2.5,-8" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,20" pos="1.5,-10" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,-6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,-4" pos="10,-6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,6" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,4" pos="10,6" transform="1,0,0,1,0,0"/>
+
+        <painting name="line" line="0,0,8.5,0" pos="1.5,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,0,6" pos="10,0" transform="1,0,0,1,0,0"/>
+    </symbol>
+
+    <ports>
+        <port name="d" pos="10,-10"/>
+        <port name="s" pos="10,10"/>
+        <port name="g" pos="-10,0"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="LND150" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="M%label %port{d} %port{g} %port{s} %port{s} LND150 %n
+                                    %model{LND150 NMOS(CGDO=2.18E-12 CGSO=5.09E-10 DELTA=9.98E-02 ETA=9.92E-02 KAPPA=1.01E+00 L=1.00E-05 LD=1.69E-09 LEVEL=3.00E+00 NFS=6.56E+10 NSUB=4.99E+13 RD=3.98E+01 RS=1.49E+02 THETA=1.00E-05 TOX=1.00E-07 TPG=9.92E-01 UO=8.62E+02 VMAX=1.01E+08 VTO=-1.98E+00 W=6.04E-04 XJ=6.47E-07)} %n"/>
+    </models>
+</component>

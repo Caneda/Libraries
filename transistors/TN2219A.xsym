@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="TN2219A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">TN2219A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="TN2219A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} TN2219A %n
+                                    %model{TN2219A NPN(BF=2.56E+02 BR=6.09E+00 CJC=7.25E-12 CJE=2.19E-11 EG=1.11E+00 FC=4.99E-01 IKF=2.85E-01 IKR=0.00E+00 IS=1.44E-14 ISC=0.00E+00 ISE=1.45E-14 ITF=5.95E-01 MJC=3.39E-01 MJE=3.79E-01 NC=2.02E+00 NE=1.29E+00 RB=1.01E+01 RC=9.94E-01 TF=4.12E-10 TR=4.66E-08 VAF=7.39E+01 VJC=7.45E-01 VJE=7.50E-01 VTF=1.69E+00 XTB=1.49E+00 XTF=2.99E+00 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

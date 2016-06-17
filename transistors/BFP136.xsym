@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFP136" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFP136</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFP136" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFP136 %n
+                                    %model{BFP136 NPN(BF=1.14E+02 BR=8.71E+01 CJC=3.00E-12 CJE=3.40E-14 EG=1.11E+00 FC=9.99E-01 IKF=1.48E+00 IKR=3.37E-02 IRB=8.47E-04 IS=1.58E-15 ISC=8.14E-18 ISE=4.61E-14 ITF=4.54E-03 MJC=3.17E-01 MJE=3.70E-01 NC=1.89E+00 NE=1.41E+00 NF=1.07E+00 NR=1.79E+00 RB=1.00E+00 RBM=0.00E+00 RC=1.63E-02 RE=2.20E-01 TF=2.05E-11 TR=1.01E-09 VAF=1.24E+01 VAR=3.21E+01 VJC=1.13E+00 VJE=7.22E-01 VTF=1.02E-01 XCJC=2.93E-02 XTB=1.49E+00 XTF=3.15E-01 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

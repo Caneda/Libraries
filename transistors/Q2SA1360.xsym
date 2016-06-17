@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="Q2SA1360" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">Q2SA1360</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="Q2SA1360" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} Q2SA1360 %n
+                                    %model{Q2SA1360 PNP(BF=1.49E+02 BR=7.80E-01 CJC=6.30E-12 CJE=3.98E-12 IKF=7.88E-02 IKR=1.03E+00 IS=1.17E-13 ISC=2.69E-08 ISE=3.00E-13 ITF=1.14E-01 MJC=2.62E-01 MJE=3.32E-01 NC=2.97E+00 NE=1.56E+00 NKF=4.96E-01 RC=4.51E+00 TF=3.44E-10 TR=1.00E-08 VAF=9.96E+01 VAR=9.95E+01 VJC=3.51E-01 VTF=7.02E+00 XTF=8.45E+01)} %n"/>
+    </models>
+</component>

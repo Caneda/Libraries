@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="2N6609" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">2N6609</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,10"/>
+        <port name="e" pos="10,-10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="2N6609" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} 2N6609 %n
+                                    %model{2N6609 PNP(BF=1.54E+02 BR=3.54E+00 CJC=9.91E-12 CJE=1.00E-11 EG=1.22E+00 FC=5.02E-01 IKF=5.49E+00 IKR=7.79E+00 IRB=1.00E-01 IS=8.96E-11 ISC=4.70E-13 ISE=7.74E-12 ITF=9.96E-03 MJC=3.28E-01 MJE=3.31E-01 NC=3.94E+00 NE=3.31E+00 NF=1.29E+00 NR=1.40E+00 RB=2.43E+00 RBM=2.51E-01 RC=7.94E-02 RE=6.10E-04 TF=1.00E-09 TR=9.91E-08 VAF=2.77E+01 VAR=2.69E+00 VJC=7.55E-01 VJE=7.44E-01 VTF=1.00E+01 XCJC=9.02E-01 XTB=1.00E-01 XTF=9.95E-01 XTI=1.10E+00)} %n"/>
+    </models>
+</component>

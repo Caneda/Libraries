@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BSW67A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BSW67A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BSW67A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BSW67A %n
+                                    %model{BSW67A NPN(BF=3.18E+02 BR=4.82E+00 CJC=5.16E-11 CJE=2.38E-10 EG=1.11E+00 FC=5.04E-01 IKF=8.25E-01 IKR=3.95E-01 IS=4.53E-14 ISC=1.60E-13 ISE=1.01E-13 ITF=2.65E+00 MJC=3.73E-01 MJE=2.49E-01 NC=1.71E+00 NE=1.27E+00 NKF=7.68E-01 RC=2.55E-01 TF=1.04E-09 TR=9.98E-09 VAF=9.98E+01 VJC=4.97E-01 VJE=5.00E-01 VTF=9.96E+00 XTB=1.51E+00 XTF=3.60E+01 XTI=2.97E+00)} %n"/>
+    </models>
+</component>

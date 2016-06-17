@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="BFG135A" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">BFG135A</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="BFG135A" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} BFG135A %n
+                                    %model{BFG135A NPN(BF=8.60E+01 BR=6.12E+01 CJC=2.97E-12 CJE=3.31E-14 EG=1.12E+00 FC=5.64E-01 IKF=1.90E+00 IKR=1.90E-02 IRB=2.08E-04 IS=9.71E-15 ISC=4.59E-18 ISE=3.72E-15 ITF=4.73E-03 MJC=3.92E-01 MJE=5.12E-01 NC=1.28E+00 NE=7.51E-01 NF=4.64E-01 NR=1.16E+00 RB=1.02E+00 RBM=0.00E+00 RC=7.52E-02 RE=1.49E+00 TF=4.31E-11 TR=1.37E-10 VAF=3.36E+01 VAR=4.60E+01 VJC=1.01E+00 VJE=8.85E-01 VTF=1.18E-01 XCJC=2.08E-02 XTB=1.51E+00 XTF=2.69E-01 XTI=3.00E+00)} %n"/>
+    </models>
+</component>

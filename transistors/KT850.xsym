@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE caneda>
+
+<component name="KT850" version="0.1.0" label="Q">
+    <displaytext>
+        <lang lang="C">KT850</lang>
+    </displaytext>
+
+    <symbol>
+        <painting name="line" line="0,0,0,20" pos="0,-10" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,10,0" pos="-10,0" transform="1,0,0,1,0,0"/>
+        <painting name="line" line="0,0,-10,5" pos="10,-10" transform="1,0,0,1,0,0"/>
+        <painting name="arrow" line="0,0,10,5" pos="0,5" transform="1,0,0,1,0,0">
+            <properties headStyle="1" headSize="4,6"/>
+        </painting>
+    </symbol>
+
+    <ports>
+        <port name="b" pos="-10,0"/>
+        <port name="c" pos="10,-10"/>
+        <port name="e" pos="10,10"/>
+    </ports>
+
+    <properties>
+        <property name="model" default="KT850" unit="" visible="true">
+            <description>
+                <lang lang="C">Device model.</lang>
+            </description>
+        </property>
+    </properties>
+
+    <models>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} KT850 %n
+                                    %model{KT850 NPN(BF=1.13E+03 BR=8.84E-01 CJC=4.97E-12 CJE=5.00E-12 IKF=8.56E-01 IKR=2.45E-02 IS=6.59E-13 ISC=1.04E-07 ISE=3.07E-12 ITF=9.96E-03 MJC=5.00E-01 MJE=5.00E-01 NE=1.42E+00 NF=1.09E+00 RC=3.06E-02 RE=1.64E-01 TF=8.79E-09 TR=5.00E-05 VAF=5.28E+01 VTF=9.96E+00 XTF=5.00E-01)} %n"/>
+    </models>
+</component>
