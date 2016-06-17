@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE caneda>
 
-<component name="TIP42C_" version="0.1.0" label="Q">
+<component name="TIP42C" version="0.1.0" label="Q">
     <displaytext>
-        <lang lang="C">TIP42C_</lang>
+        <lang lang="C">TIP42C</lang>
     </displaytext>
 
     <symbol>
@@ -22,7 +22,7 @@
     </ports>
 
     <properties>
-        <property name="model" default="TIP42C_" unit="" visible="true">
+        <property name="model" default="TIP42C" unit="" visible="true">
             <description>
                 <lang lang="C">Device model.</lang>
             </description>
@@ -30,7 +30,7 @@
     </properties>
 
     <models>
-        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} TIP42C_ %n
-                                    %model{TIP42C_ PNP(BF=1.20E+02 BR=2.84E+00 CJC=1.09E-10 CJE=1.91E-10 EG=1.05E+00 FC=7.93E-01 IKF=1.48E+00 IKR=9.96E+00 IRB=2.35E-01 IS=5.65E-10 ISC=7.02E-14 ISE=6.93E-14 ITF=9.94E-04 KF=0.00E+00 MJC=2.29E-01 MJE=2.60E-01 NC=3.77E+00 NE=4.02E+00 NF=1.23E+00 NR=1.29E+00 PTF=0.00E+00 RB=4.76E+00 RBM=1.27E-01 RC=9.19E-02 RE=6.72E-04 TF=1.01E-08 TR=1.00E-07 VAF=9.08E+01 VAR=2.71E+01 VJC=7.30E-01 VJE=4.02E-01 VTF=6.54E+00 XCJC=8.01E-01 XTB=3.23E+00 XTF=4.44E+00 XTI=9.99E-01)} %n"/>
+        <model type="spice" syntax="Q%label %port{c} %port{b} %port{e} TIP42C %n
+                                    %model{TIP42C PNP(BF=1.20E+02 BR=2.84E+00 CJC=1.09E-10 CJE=1.91E-10 EG=1.05E+00 FC=7.93E-01 IKF=1.48E+00 IKR=9.96E+00 IRB=2.35E-01 IS=5.65E-10 ISC=7.02E-14 ISE=6.93E-14 ITF=9.94E-04 KF=0.00E+00 MJC=2.29E-01 MJE=2.60E-01 NC=3.77E+00 NE=4.02E+00 NF=1.23E+00 NR=1.29E+00 PTF=0.00E+00 RB=4.76E+00 RBM=1.27E-01 RC=9.19E-02 RE=6.72E-04 TF=1.01E-08 TR=1.00E-07 VAF=9.08E+01 VAR=2.71E+01 VJC=7.30E-01 VJE=4.02E-01 VTF=6.54E+00 XCJC=8.01E-01 XTB=3.23E+00 XTF=4.44E+00 XTI=9.99E-01)} %n"/>
     </models>
 </component>
